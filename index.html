@@ -298,6 +298,24 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .rail .rc p{font-size:14px;font-weight:700}
   .rail .rc .v{font-family:var(--en);font-weight:700;font-size:24px;font-variant-numeric:tabular-nums;white-space:nowrap}
   .rail .rc .v small{font-family:var(--jp);font-size:12px;margin:0 2px}
+  .rail .today{margin-top:10px;border:2px solid var(--honey);border-radius:16px;background:var(--black2);box-shadow:0 0 18px rgba(255,194,26,.25);padding:12px 10px 12px;text-align:center}
+  .rail .today .th{font-weight:700;font-size:19px;line-height:1.35;color:var(--honey)}
+  .rail .today .tr{font-weight:700;font-size:14px;margin-top:4px;line-height:1.4;letter-spacing:0;white-space:nowrap}
+  .rail .today .tr small{display:block;font-size:13px;color:#cdbb9c;font-weight:500}
+  .rail .today .tp{display:block;margin-top:4px;background:var(--honey);color:var(--ink);border-radius:6px;font-size:13px;padding:1px 0}
+  .rail .today .tp b{font-family:var(--en);font-size:18px;line-height:1}
+  .rail .tw{display:grid;grid-template-columns:48px 1fr;gap:6px;align-items:center;margin-top:8px;padding-top:8px;border-top:1px solid var(--line-d)}
+  .rail .ti{display:block;text-align:center}
+  .rail .ti img{width:48px;aspect-ratio:1/1;border-radius:8px}
+  .rail .ti span{display:block;letter-spacing:0;white-space:nowrap;font-family:var(--en);font-weight:700;font-size:13px;color:var(--honey);margin-top:2px;line-height:1}
+  .rail .tb{display:grid;gap:4px}
+  .rail .tc{display:flex;align-items:center;justify-content:space-between;background:var(--red);color:#fff;border-radius:8px;padding:3px 8px;transition:filter .2s}
+  .rail .tc:hover{filter:brightness(1.12)}
+  .rail .tc .n{font-size:13px;font-weight:700}
+  .rail .tc .v{font-family:var(--en);font-weight:700;font-size:20px;line-height:1.1}
+  .rail .tc .v small{font-family:var(--jp);font-size:11px;margin-left:1px}
+  .rail .today .tf{margin-top:8px;font-size:13px;font-weight:700;color:#cdbb9c}
+  .rail .today .tl{display:block;margin-top:8px;background:var(--g-honey);color:var(--ink);border-radius:999px;font-size:14px;font-weight:700;padding:6px 0}
   .rail .pick{display:block;margin-top:10px;border:2px solid var(--honey);border-radius:16px;overflow:hidden;text-align:center;background:var(--black2);box-shadow:0 0 18px rgba(255,194,26,.25)}
   .rail .pick img{width:100%;aspect-ratio:1/1}
   .rail .pick p{font-size:14px;font-weight:700;padding-top:8px}
@@ -347,12 +365,12 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 </aside>
 <aside class="rail r" aria-label="いま使えるクーポン">
   <div class="rc"><p data-cd-lbl2>ブラックフライデー開始まで</p><p class="v" data-cd-mini></p></div>
-  <a class="pick" href="#it-gb10">
-    <img src="img/gb10.jpg" alt="プレミアムマヌカハニー UMF10+">
-    <p>UMF10+ が1個から</p>
-    <span class="off" data-pick-off></span>
-    <span class="bt">クーポン価格を見る</span>
-  </a>
+  <div class="today" data-today-box>
+    <p class="th" data-today-th>本日使える<br>おトクなクーポン</p>
+    <p class="tr" data-today-rn></p>
+    <div data-today></div>
+    <a class="tl" href="#items">クーポン価格を見る</a>
+  </div>
   <a class="mt" href="#matome">まとめ買いクーポン配布中<br>3個以上で<b>47%</b>OFF</a>
 </aside>
 
@@ -668,7 +686,20 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
     $("[data-fv-1]").innerHTML = offHTML(max1);
     $("[data-fv-2]").innerHTML = offHTML(max2);
     $("[data-fv-p5]").innerHTML = (r.p5 && st !== "end") ? P5 : "";
-    var pk = $("[data-pick-off]"); if (pk) pk.innerHTML = offHTML(r.c.gb10[0]);
+    renderToday(r, st);
+  }
+
+  function renderToday(r, st){
+    var box = $("[data-today-box]"); if (!box) return;
+    if (st === "end") { box.style.display = "none"; return; }
+    $("[data-today-th]").innerHTML = st === "live" ? "本日使える<br>おトクなクーポン" : "次に使える<br>おトクなクーポン";
+    $("[data-today-rn]").innerHTML = r.no + r.name + '<small>' + r.dt.replace(/<[^>]+>/g, "").replace("〜", "〜 ") + '</small>' + (r.p5 ? '<span class="tp">店内全品ポイント<b>5</b>倍</span>' : "");
+    $("[data-today]").innerHTML = ITEMS.map(function(it){
+      var c = r.c[it.id];
+      var a = function(n, off, key){ return '<a class="tc" href="' + CG + key + '&rt="><span class="n">' + n + '個</span><span class="v">' + yen(off) + '<small>円OFF</small></span></a>'; };
+      return '<div class="tw"><a class="ti" href="#it-' + it.id + '"><img src="img/' + it.id + '.jpg" alt=""><span>UMF' + it.umf + '</span></a>' +
+        '<div class="tb">' + a(1, c[0], c[2]) + a(2, c[1], c[3]) + '</div></div>';
+    }).join("") + (r.first ? '<p class="tf">1個用・2個用は先着150名様</p>' : "");
   }
 
   function renderBars(){

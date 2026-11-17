@@ -60,21 +60,19 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .fv{position:relative;padding:0 0 26px;text-align:center;isolation:isolate;overflow:hidden}
 .fv:before{content:"";position:absolute;inset:0;z-index:-2;background:repeating-conic-gradient(from 0deg at 50% 46%,rgba(255,194,26,.10) 0deg 4deg,transparent 4deg 15deg)}
 .fv:after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse 70% 52% at 50% 46%,rgba(255,170,20,.26),transparent 70%),radial-gradient(ellipse 120% 80% at 50% 50%,transparent 50%,var(--black) 92%)}
-.drip{display:block;width:100%;height:auto;position:relative;z-index:2}
-.drip .d{transform-box:fill-box;transform-origin:50% 0;animation:drip 5.5s ease-in-out infinite}
-.drip .d2{animation-delay:-1.8s;animation-duration:6.5s}
-.drip .d3{animation-delay:-3.6s;animation-duration:7s}
-.drip .drop{animation:drop 5.5s ease-in infinite;transform-box:fill-box;transform-origin:50% 50%}
-@keyframes drip{0%,100%{transform:scaleY(.72)}50%{transform:scaleY(1.12)}}
-@keyframes drop{0%,48%{transform:translateY(0);opacity:0}52%{opacity:1}90%{transform:translateY(240px);opacity:1}100%{transform:translateY(260px);opacity:0}}
+.glow{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.glow i{position:absolute;bottom:-20px;border-radius:50%;background:radial-gradient(circle,#ffe9a0 0%,#ffc21a 45%,rgba(255,170,0,0) 72%);opacity:0;animation:rise linear infinite}
+@keyframes rise{0%{transform:translateY(0) scale(.6);opacity:0}15%{opacity:.85}70%{opacity:.5}100%{transform:translateY(-1100px) scale(1);opacity:0}}
+.fv{padding-top:34px!important}
 .fv-tape{position:absolute;left:-60px;top:84px;z-index:1;transform:rotate(-16deg);background:var(--honey);color:var(--ink);font-family:var(--en);font-weight:700;font-size:20px;letter-spacing:.14em;padding:5px 70px;white-space:nowrap}
-.fv-catch{margin-top:-6px;font-size:min(6.2vw,34px);font-weight:700;line-height:1.4;letter-spacing:.06em;position:relative;z-index:2}
+.fv-catch{margin-top:0;font-size:min(6.2vw,34px);font-weight:700;line-height:1.4;letter-spacing:.06em;position:relative;z-index:2}
 .fv-catch em{font-style:normal;color:var(--honey)}
 .fv-title{font-family:var(--en);font-weight:700;line-height:.84;letter-spacing:.01em;margin-top:14px;font-size:min(22vw,150px)}
-.fv-title .l1{display:block;color:var(--honey);text-shadow:0 0 18px rgba(255,194,26,.55),0 0 46px rgba(255,140,0,.35)}
+.fv-title .l1{display:block;color:transparent;background:linear-gradient(105deg,#ffc21a 0%,#ffc21a 40%,#fff4c4 50%,#ffc21a 60%,#ffc21a 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 14px rgba(255,194,26,.55)) drop-shadow(0 0 34px rgba(255,140,0,.3));animation:shine 4.5s ease-in-out infinite}
+@keyframes shine{0%,35%{background-position:100% 0}75%,100%{background-position:0 0}}
 .fv-title .l2{display:block;color:transparent;-webkit-text-stroke:2.5px var(--honey);filter:drop-shadow(0 0 10px rgba(255,194,26,.6));margin-top:.04em}
 .fv-date{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:18px;font-family:var(--en);font-weight:600;font-size:min(6vw,32px);letter-spacing:.02em;white-space:nowrap}
-.fv-date i{font-style:normal;display:inline-grid;place-items:center;width:1.05em;height:1.05em;border-radius:50%;background:var(--honey);color:var(--ink);font-family:var(--jp);font-size:.55em;font-weight:700;margin:0 .1em}
+.fv-date i{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:1.7em;height:1.7em;line-height:1;border-radius:50%;background:var(--honey);color:var(--ink);font-family:var(--jp);font-size:.5em;font-weight:700;margin:0 .05em;flex:none;position:relative;top:.04em}
 .fv-date .ar{width:30px;height:2px;background:#fff;position:relative}
 .fv-date .ar:after{content:"";position:absolute;right:-1px;top:-4px;border:5px solid transparent;border-left:8px solid #fff;border-right:0}
 .jars{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:22px 14px 0;position:relative}
@@ -346,7 +344,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
 .rv.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.mq .run,.jars a,.drip *,.rd .st.live{animation:none}.rv{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.mq .run,.jars a,.glow i,.fv-title .l1,.rd .st.live{animation:none}.rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
@@ -384,14 +382,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
   <!-- FV -->
   <section class="fv">
-    <svg class="drip" viewBox="0 0 700 120" preserveAspectRatio="none" aria-hidden="true">
-      <defs><linearGradient id="hg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e98d0c"/><stop offset=".6" stop-color="#ffb000"/><stop offset="1" stop-color="#ffd75a"/></linearGradient></defs>
-      <path d="M0 0H700V22C660 26 640 30 610 28C580 26 560 34 520 30C480 26 450 22 410 30C370 38 340 26 300 26C260 26 240 34 200 30C160 26 130 24 100 30C70 36 40 26 0 30Z" fill="url(#hg)"/>
-      <rect class="d" x="118" y="22" width="22" height="60" rx="11" fill="url(#hg)"/>
-      <rect class="d d2" x="335" y="22" width="26" height="78" rx="13" fill="url(#hg)"/>
-      <rect class="d d3" x="560" y="24" width="18" height="44" rx="9" fill="url(#hg)"/>
-      <circle class="drop" cx="348" cy="104" r="9" fill="#ffc21a"/>
-    </svg>
+    <div class="glow" aria-hidden="true"></div>
         <p class="fv-catch">毎日のひとさじを、<br><em>ブラックフライデー価格</em>で。</p>
     <h1 class="fv-title" aria-label="BLACK FRIDAY"><span class="l1">BLACK</span><span class="l2">FRIDAY</span></h1>
     <p class="fv-date">11.19<i>木</i>20:00<span class="ar"></span>11.25<i>水</i>1:59</p>
@@ -741,6 +732,14 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
     if (!userPicked && a !== sel) { sel = a; renderAll(); renderFV(); }
   }
 
+  var gl = $(".glow");
+  if (gl && !matchMedia("(prefers-reduced-motion:reduce)").matches) {
+    for (var k = 0; k < 16; k++) {
+      var d = document.createElement("i"), sz = 4 + Math.random() * 12;
+      d.style.cssText = "left:" + (Math.random() * 100) + "%;width:" + sz + "px;height:" + sz + "px;animation-duration:" + (9 + Math.random() * 9) + "s;animation-delay:" + (-Math.random() * 18) + "s;filter:blur(" + (sz > 11 ? 2 : 0) + "px)";
+      gl.appendChild(d);
+    }
+  }
   $$("[data-dup]").forEach(function(el){ el.innerHTML += el.innerHTML; });
   renderFV(); renderBars(); renderAll(); tick();
   setInterval(tick, 1000);

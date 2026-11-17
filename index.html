@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ブラックフライデー｜マヌカハニー専門 グリーンベイ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0b0907;
+  --black2:#17120c;
+  --line-d:#3a2d1c;
+  --honey:#ffc21a;
+  --honey-l:#ffe28a;
+  --amber:#e7891b;
+  --amber-d:#9a5a0c;
+  --cream:#fff8e8;
+  --paper:#fffdf6;
+  --ink:#231a10;
+  --sub:#6b5a45;
+  --line:#ecdcbc;
+  --red:#d9261c;
+  --green:#1f5a45;
+  --w:700px;
+  --en:"Jost",sans-serif;
+  --jp:"Noto Sans JP",sans-serif;
+  --g-honey:linear-gradient(100deg,#ffb000 0%,#ffd75a 38%,#ffeaa0 50%,#ffc21a 64%,#e98d0c 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#050403;color:#fff;font-family:var(--jp);font-size:17px;line-height:1.6;letter-spacing:.04em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.page{max-width:var(--w);margin:0 auto;background:var(--black);overflow:hidden;position:relative;box-shadow:0 0 80px rgba(255,170,0,.08)}
+.num{font-family:var(--en);font-weight:600;letter-spacing:-.01em;line-height:1}
+.inner{padding:0 16px}
+.center{text-align:center}
+.draft{background:var(--honey);color:var(--ink);font-size:14px;text-align:center;padding:5px 10px;font-weight:700}
+
+/* ---- %OFF / 円OFF 共通部品 ---- */
+.off{display:inline-flex;align-items:center;line-height:1;white-space:nowrap}
+.off>b{font-family:var(--en);font-weight:600;font-size:1em;line-height:.8;letter-spacing:-.02em}
+.off__u{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:.04em;margin-left:.05em}
+.off__u i{font-style:normal;display:block;line-height:.9}
+.off__u .p{font-family:var(--en);font-weight:600;font-size:.6em}
+.off__u .y{font-family:var(--jp);font-weight:700;font-size:.5em;line-height:1}
+.off__u .o{font-family:var(--en);font-weight:700;font-size:.4em;letter-spacing:.02em}
+
+/* ---- header ---- */
+.hd{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:1px solid var(--line-d);position:relative;z-index:3}
+.hd .logo{font-family:var(--en);font-weight:600;font-size:21px;letter-spacing:.3em;color:var(--honey)}
+.hd small{display:block;white-space:nowrap;font-size:14px;color:#cdbb9c;letter-spacing:.04em;line-height:1.3}
+.hd a.top{font-size:14px;font-weight:700;color:#fff;border-bottom:1px solid var(--honey);white-space:nowrap}
+
+/* ---- FV ---- */
+.fv{position:relative;padding:0 0 26px;text-align:center;isolation:isolate;overflow:hidden}
+.fv:before{content:"";position:absolute;inset:0;z-index:-2;background:repeating-conic-gradient(from 0deg at 50% 46%,rgba(255,194,26,.10) 0deg 4deg,transparent 4deg 15deg)}
+.fv:after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse 70% 52% at 50% 46%,rgba(255,170,20,.26),transparent 70%),radial-gradient(ellipse 120% 80% at 50% 50%,transparent 50%,var(--black) 92%)}
+.drip{display:block;width:100%;height:auto;position:relative;z-index:2}
+.drip .d{transform-box:fill-box;transform-origin:50% 0;animation:drip 5.5s ease-in-out infinite}
+.drip .d2{animation-delay:-1.8s;animation-duration:6.5s}
+.drip .d3{animation-delay:-3.6s;animation-duration:7s}
+.drip .drop{animation:drop 5.5s ease-in infinite;transform-box:fill-box;transform-origin:50% 50%}
+@keyframes drip{0%,100%{transform:scaleY(.72)}50%{transform:scaleY(1.12)}}
+@keyframes drop{0%,48%{transform:translateY(0);opacity:0}52%{opacity:1}90%{transform:translateY(240px);opacity:1}100%{transform:translateY(260px);opacity:0}}
+.fv-tape{position:absolute;left:-60px;top:84px;z-index:1;transform:rotate(-16deg);background:var(--honey);color:var(--ink);font-family:var(--en);font-weight:700;font-size:20px;letter-spacing:.14em;padding:5px 70px;white-space:nowrap}
+.fv-catch{margin-top:-6px;font-size:min(6.2vw,34px);font-weight:700;line-height:1.4;letter-spacing:.06em;position:relative;z-index:2}
+.fv-catch em{font-style:normal;color:var(--honey)}
+.fv-title{font-family:var(--en);font-weight:700;line-height:.84;letter-spacing:.01em;margin-top:14px;font-size:min(22vw,150px)}
+.fv-title .l1{display:block;color:var(--honey);text-shadow:0 0 18px rgba(255,194,26,.55),0 0 46px rgba(255,140,0,.35)}
+.fv-title .l2{display:block;color:transparent;-webkit-text-stroke:2.5px var(--honey);filter:drop-shadow(0 0 10px rgba(255,194,26,.6));margin-top:.04em}
+.fv-date{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:18px;font-family:var(--en);font-weight:600;font-size:min(6vw,32px);letter-spacing:.02em;white-space:nowrap}
+.fv-date i{font-style:normal;display:inline-grid;place-items:center;width:1.05em;height:1.05em;border-radius:50%;background:var(--honey);color:var(--ink);font-family:var(--jp);font-size:.55em;font-weight:700;margin:0 .1em}
+.fv-date .ar{width:30px;height:2px;background:#fff;position:relative}
+.fv-date .ar:after{content:"";position:absolute;right:-1px;top:-4px;border:5px solid transparent;border-left:8px solid #fff;border-right:0}
+.jars{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:22px 14px 0;position:relative}
+.jars a{position:relative;border-radius:14px;overflow:hidden;box-shadow:0 0 0 2px rgba(255,194,26,.6),0 0 26px rgba(255,170,0,.35);transition:transform .3s;animation:float 4.6s ease-in-out infinite}
+.jars a:nth-child(2){animation-delay:-1.1s}.jars a:nth-child(3){animation-delay:-2.2s}.jars a:nth-child(4){animation-delay:-3.3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.jars span{position:absolute;left:0;right:0;bottom:0;background:rgba(11,9,7,.86);color:var(--honey);font-family:var(--en);font-weight:700;font-size:min(4.4vw,22px);padding:3px 0;letter-spacing:.02em}
+.fv-now{margin:26px 16px 0;border:2px solid var(--honey);border-radius:18px;padding:14px 12px 16px;background:rgba(11,9,7,.7);box-shadow:0 0 22px rgba(255,194,26,.25)}
+.fv-now .lbl{display:inline-block;background:var(--honey);color:var(--ink);font-weight:700;font-size:min(4.6vw,22px);border-radius:999px;padding:2px 16px}
+.fv-now .rn{display:block;margin-top:8px;font-weight:700;font-size:min(5.4vw,28px);line-height:1.35}
+.fv-now .rn small{display:block;font-size:16px;color:#e9dcc4;font-weight:500}
+.fv-big{display:grid;grid-template-columns:1fr 1fr;margin-top:10px;border-top:1px solid var(--line-d)}
+.fv-big div{padding:10px 4px 0}
+.fv-big div+div{border-left:1px solid var(--line-d)}
+.fv-big div{min-width:0}
+.fv-big p{font-weight:700;font-size:min(4.6vw,20px)}
+.fv-big .off{color:var(--honey);font-size:min(11.4vw,72px);margin-top:6px}
+.fv-now .go{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;background:var(--g-honey);color:var(--ink);font-weight:700;font-size:min(5vw,22px);border-radius:999px;padding:12px 10px}
+.fv-now .go:after,.btn:after{content:"";width:8px;height:8px;border-top:2.5px solid currentColor;border-right:2.5px solid currentColor;transform:rotate(45deg)}
+.fv-matome{display:flex;align-items:center;justify-content:center;gap:10px;margin:12px 16px 0;padding:10px 12px;border-radius:14px;background:var(--cream);color:var(--ink);font-weight:700;font-size:min(4.4vw,20px);white-space:nowrap}
+.fv-matome span{line-height:1.45}
+.fv-matome .off{color:var(--red);font-size:min(12vw,54px)}
+
+/* ---- marquee + countdown ---- */
+.mq{overflow:hidden;white-space:nowrap;border-top:1px solid var(--line-d);border-bottom:1px solid var(--line-d);padding:8px 0}
+.mq .run{display:inline-block;animation:run 26s linear infinite;font-family:var(--en);font-weight:700;font-size:min(13vw,72px);line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--honey)}
+.mq .run span{margin:0 .3em}
+.mq .run span:nth-child(odd){color:var(--honey);-webkit-text-stroke:0}
+@keyframes run{to{transform:translateX(-50%)}}
+.cd{background:var(--honey);color:var(--ink);text-align:center;padding:12px 10px 14px}
+.cd-lbl{font-size:min(4.8vw,20px);font-weight:700;letter-spacing:.08em}
+.cd-num{display:flex;justify-content:center;align-items:baseline;gap:4px;margin-top:4px;white-space:nowrap}
+.cd-num .num{font-size:min(12vw,58px);font-variant-numeric:tabular-nums;font-weight:700}
+.cd-num small{font-size:min(4.2vw,18px);font-weight:700;margin-right:8px}
+
+/* ---- section base ---- */
+.sec{padding:52px 0}
+.kick{display:block;font-family:var(--en);font-weight:600;font-size:16px;letter-spacing:.3em;color:var(--honey);text-align:center}
+.h2{font-weight:700;font-size:min(7.2vw,40px);line-height:1.4;letter-spacing:.02em;text-align:center;margin-top:6px;word-break:auto-phrase}
+.h2 em{font-style:normal;color:var(--honey)}
+.lead{margin-top:10px;font-size:17px;text-align:center;color:#eadfca;word-break:auto-phrase}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--red);color:#fff;font-weight:700;font-size:18px;border-radius:999px;padding:12px 16px;transition:filter .2s,transform .2s;text-align:center;line-height:1.35}
+.btn:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.btn.hn{background:var(--g-honey);color:var(--ink)}
+.btn.dk{background:var(--ink);color:#fff}
+.btn.ln{background:transparent;border:2px solid currentColor;color:var(--ink)}
+.btn.dis{background:#bdb2a2;color:#fff;pointer-events:none}
+.btn.dis:after{display:none}
+.note{font-size:14px;line-height:1.7;margin-top:12px;color:#d8cbb4}
+.note p{padding-left:1em;text-indent:-1em}
+
+/* ---- 3回のクーポン(タブ) ---- */
+.rounds{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}
+.rd{min-width:0;position:relative;text-align:center;border:2px solid var(--line-d);border-radius:16px;padding:12px 6px 12px;background:var(--black2);transition:border-color .2s,background .2s,transform .2s}
+.rd:hover{transform:translateY(-2px)}
+.rd .no{font-family:var(--en);font-weight:700;font-size:min(9vw,44px);line-height:1;color:var(--honey)}
+.rd .nm{display:block;font-weight:700;font-size:min(4vw,18px);line-height:1.35;margin-top:6px;word-break:auto-phrase}
+.rd .dt{display:block;letter-spacing:0;font-family:var(--en);font-weight:600;font-size:min(4.2vw,18px);line-height:1.35;margin-top:6px;color:#e9dcc4}
+.rd .dt small{font-family:var(--jp);font-size:.8em}
+.rd .st{display:inline-block;margin-top:8px;font-size:14px;font-weight:700;border-radius:999px;padding:1px 10px;background:#3a2f22;color:#d8cbb4}
+.rd .st.live{background:var(--red);color:#fff;animation:blink 1.6s ease-in-out infinite}
+.rd .st.soon{background:#fff;color:var(--ink)}
+@keyframes blink{50%{opacity:.6}}
+.rd.on{border-color:var(--honey);background:#2a1f0e;box-shadow:0 0 18px rgba(255,194,26,.35)}
+.rd.on:after{content:"";position:absolute;left:50%;bottom:-11px;margin-left:-9px;border:9px solid transparent;border-top-color:var(--honey);border-bottom:0}
+.rd.end{opacity:.5}
+.rinfo{margin-top:18px;background:var(--cream);color:var(--ink);border-radius:20px;padding:18px 14px 16px;text-align:center}
+.rinfo .t{font-weight:700;font-size:min(6vw,30px);line-height:1.35;word-break:auto-phrase}
+.rinfo .t b{color:var(--red)}
+.rinfo .when{font-family:var(--en);font-weight:600;font-size:min(5.4vw,26px);margin-top:4px;white-space:nowrap}
+.rinfo .when small{font-family:var(--jp);font-size:.62em}
+.tags{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:10px}
+.tag{font-size:16px;font-weight:700;border-radius:8px;padding:4px 12px;background:#fff;border:1.5px solid var(--line)}
+.tag.r{background:var(--red);color:#fff;border-color:var(--red)}
+.tag.k{background:var(--ink);color:var(--honey);border-color:var(--ink)}
+.tag.k b{font-family:var(--en);font-size:1.3em;line-height:1}
+.rinfo .cdx{white-space:nowrap;margin-top:10px;font-weight:700;font-size:min(4.2vw,17px);color:var(--amber-d)}
+.rinfo .cdx b{font-family:var(--en);font-size:1.35em;font-variant-numeric:tabular-nums}
+.rinfo .both{margin-top:10px;font-size:15px;font-weight:700;background:#fff1c9;border-radius:10px;padding:8px 10px;line-height:1.5}
+
+/* ---- how to ---- */
+.how{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:4px;margin-top:16px;text-align:center}
+.how div{background:var(--black2);border:1px solid var(--line-d);border-radius:14px;padding:10px 4px;font-weight:700;font-size:min(4vw,17px);line-height:1.4;height:100%;display:flex;flex-direction:column;justify-content:center}
+.how div b{display:block;font-family:var(--en);color:var(--honey);font-size:24px;line-height:1}
+.how i{width:0;height:0;border:7px solid transparent;border-left:9px solid var(--honey);border-right:0}
+
+/* ---- MGO guide ---- */
+.guide{margin-top:26px;border-top:1px solid var(--line-d);padding-top:22px}
+.guide h3{text-align:center;font-size:min(5.8vw,26px);font-weight:700;line-height:1.4}
+.guide h3 em{font-style:normal;color:var(--honey)}
+.guide .gl{margin-top:4px;text-align:center;font-size:16px;color:#d8cbb4}
+.bars{margin-top:14px;display:grid;gap:10px}
+.bar{display:grid;grid-template-columns:84px 1fr;gap:10px;align-items:center}
+.bar .u{font-family:var(--en);font-weight:700;font-size:26px;color:var(--honey);text-align:right;line-height:1}
+.bar .u small{display:block;font-size:14px;color:#cdbb9c;font-weight:600;margin-top:3px}
+.bar .tr{position:relative;height:40px;background:#21190f;border-radius:999px;overflow:hidden}
+.bar .fill{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:999px;background:var(--g-honey);transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.bar .tr{height:30px}
+.bar .tx{display:block;margin-top:4px;font-weight:700;font-size:15px;color:#e9dcc4;line-height:1.3}
+
+/* ---- product cards ---- */
+.items{display:grid;gap:18px;margin-top:22px}
+.it{background:var(--cream);color:var(--ink);border-radius:22px;overflow:hidden;border:2px solid var(--honey);scroll-margin-top:16px}
+.it-h{background:var(--black2);color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 12px;flex-wrap:wrap}
+.it-h .u{font-family:var(--en);font-weight:700;font-size:min(8vw,38px);color:var(--honey);line-height:1}
+.it-h .m{font-family:var(--en);font-weight:600;font-size:min(5vw,22px);line-height:1}
+.it-h .ln{white-space:nowrap;font-size:14px;font-weight:700;border:1.5px solid var(--honey);color:var(--honey);border-radius:6px;padding:1px 8px}
+.it-b{display:grid;grid-template-columns:44% 1fr;gap:14px;padding:14px 14px 0;align-items:center}
+.it-b img{width:100%;aspect-ratio:1/1;border-radius:14px}
+.it-b .nm{font-size:min(4.6vw,20px);font-weight:700;line-height:1.45}
+.it-b .cp{font-size:16px;line-height:1.6;margin-top:6px;color:#4a3a28}
+.it-b .reg{margin-top:8px;font-size:16px;font-weight:700;color:var(--sub)}
+.it-b .reg b{font-family:var(--en);font-size:22px}
+.buys{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px}
+.buy{background:#fff;border-radius:16px;border:1.5px solid var(--line);padding:12px 8px 12px;text-align:center;display:flex;flex-direction:column}
+.buy .q{display:inline-block;align-self:center;background:var(--ink);color:#fff;font-weight:700;font-size:17px;border-radius:999px;padding:1px 14px}
+.buy .q b{font-family:var(--en);font-size:1.2em;color:var(--honey)}
+.buy .off{color:var(--red);font-size:min(11vw,54px);margin-top:10px;justify-content:center}
+.buy .pr{margin-top:10px;font-size:15px;font-weight:700;color:var(--sub);line-height:1.3}
+.buy .pr b{display:block;font-family:var(--en);font-weight:700;font-size:min(9.6vw,46px);color:var(--ink);letter-spacing:-.01em;line-height:1.05;margin-top:2px}
+.buy .pr b u{text-decoration:none;font-family:var(--jp);font-size:.42em;margin-left:1px}
+.buy .per{white-space:nowrap;font-size:15px;font-weight:700;color:var(--red);margin-top:4px}
+.buy .per span{font-family:var(--en);font-size:1.25em}
+.buy .cond{font-size:14px;color:var(--sub);margin-top:4px;line-height:1.4}
+.buy .btn{margin-top:auto;font-size:min(4.2vw,17px);padding:10px 6px;gap:6px}
+.buy .sp{flex:1;min-height:10px}
+.it-f{padding:0 14px 16px;display:grid;gap:8px}
+.it-f .btn.ln{font-size:17px;padding:10px}
+.it-f .mt{display:block;text-align:center;font-size:16px;font-weight:700;color:var(--amber-d);border-top:1px dashed var(--line);padding-top:10px}
+.it-f .mt b{font-family:var(--en);font-size:1.3em;color:var(--red)}
+
+/* ---- まとめ買い ---- */
+.mat{background:var(--honey);color:var(--ink)}
+.mat .kick{color:var(--ink)}
+.mat .h2 em{color:var(--red)}
+.mat .lead{color:var(--ink)}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.mc{background:var(--paper);border-radius:18px;padding:12px 10px 12px;text-align:center;display:flex;flex-direction:column}
+.mc img{width:62%;margin:0 auto;border-radius:12px;aspect-ratio:1/1}
+.mc .u{font-family:var(--en);font-weight:700;font-size:26px;line-height:1;margin-top:8px}
+.mc .u small{display:block;font-size:15px;color:var(--sub);margin-top:2px}
+.mc .q{font-weight:700;font-size:17px;margin-top:6px}
+.mc .off{color:var(--red);font-size:min(17vw,80px);justify-content:center;margin-top:4px}
+.mc .pr{font-size:15px;font-weight:700;color:var(--sub);margin-top:8px;line-height:1.35}
+.mc .pr b{display:block;font-family:var(--en);font-size:min(7.6vw,34px);color:var(--ink);line-height:1.1}
+.mc .pr b u{text-decoration:none;font-family:var(--jp);font-size:.45em}
+.mc .per{white-space:nowrap;font-size:15px;font-weight:700;color:var(--red);margin-top:2px}
+.mc .per span{font-family:var(--en);font-size:1.2em}
+.mc .cond{font-size:14px;color:var(--sub);margin-top:2px}
+.mc .btn{margin-top:auto;font-size:min(4vw,17px);padding:10px 6px;gap:4px}
+.mc .cond{margin-bottom:10px}
+.mat .note{color:var(--ink)}
+
+/* ---- 選ばれる理由 ---- */
+.why{position:relative;padding:0 0 52px}
+.why-ph{position:relative;height:min(118vw,620px);overflow:hidden}
+.why-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.why-ph:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,var(--black) 100%)}
+.why-in{position:relative;margin-top:-90px;z-index:1}
+.why ol{list-style:none;margin-top:20px;display:grid;gap:0;border-top:1px solid var(--line-d)}
+.why li{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center;padding:16px 4px;border-bottom:1px solid var(--line-d)}
+.why li .n{font-family:var(--en);font-weight:600;font-size:46px;line-height:1;color:var(--honey);text-align:center}
+.why li h3{word-break:auto-phrase;font-size:min(5.2vw,22px);font-weight:700;line-height:1.4}
+.why li p{font-size:16px;color:#d8cbb4;margin-top:2px}
+
+/* ---- 常設 ---- */
+.etc{background:var(--black2)}
+.eb{background:var(--cream);color:var(--ink);border-radius:20px;padding:16px 14px;margin-top:18px}
+.eb h3{word-break:auto-phrase;text-align:center;font-weight:700;font-size:min(5.2vw,24px);line-height:1.4}
+.eb .until{display:table;margin:6px auto 0;font-size:15px;font-weight:700;background:var(--ink);color:#fff;border-radius:6px;padding:1px 10px}
+.eb-row{display:grid;grid-template-columns:120px 1fr;gap:12px;align-items:center;margin-top:12px}
+.eb-row img{border-radius:12px;aspect-ratio:1/1;width:100%}
+.eb-row .nm{font-weight:700;font-size:17px;line-height:1.4}
+.eb-row .nm small{display:block;font-family:var(--en);font-size:15px;color:var(--sub)}
+.eb-row .off{color:var(--red);font-size:min(13vw,64px);margin-top:4px}
+.eb-row .off .pre{font-family:var(--jp);font-weight:700;font-size:.34em;margin-right:.2em;align-self:center}
+.eb3{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:12px}
+.eb3 a{display:block;text-align:center}
+.eb3 img{border-radius:12px;aspect-ratio:1/1;width:100%}
+.eb3 b{display:block;font-family:var(--en);font-size:20px;margin-top:4px;line-height:1.1}
+.eb3 small{display:block;font-size:14px;color:var(--sub);font-weight:700}
+.stairs{display:grid;gap:8px;margin-top:12px}
+.stairs a{display:grid;grid-template-columns:58px 1fr auto;gap:8px;align-items:center;background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:10px 4px 10px;transition:border-color .2s}
+.stairs a:hover{border-color:var(--red)}
+.stairs .q{font-weight:700;font-size:18px;text-align:center}
+.stairs .q b{font-family:var(--en);font-size:1.3em}
+.stairs .off{color:var(--red);font-size:min(9.6vw,52px);justify-content:center}
+.stairs .g{white-space:nowrap;font-size:15px;font-weight:700;color:#fff;background:var(--red);border-radius:999px;padding:6px 14px}
+.eb .btn{margin-top:12px}
+
+/* ---- foot ---- */
+.notes{padding:30px 16px 20px;border-top:1px solid var(--line-d)}
+.notes h3{font-size:18px;font-weight:700;color:var(--honey);text-align:center}
+.ft{background:var(--honey);color:var(--ink);text-align:center;padding:24px 20px 28px}
+.ft .logo{font-family:var(--en);font-weight:600;font-size:22px;letter-spacing:.3em}
+.ft small{display:block;font-size:14px;font-weight:700}
+.ft .btn{margin:16px auto 0;max-width:360px}
+
+/* ---- PC rails ---- */
+.rail{display:none}
+@media (min-width:1240px){
+  .rail{display:block;position:fixed;top:50%;transform:translateY(-50%);width:220px;z-index:20}
+  .rail.l{left:calc(50% - 350px - 260px)}
+  .rail.r{right:calc(50% - 350px - 260px)}
+  .rail .bf{font-family:var(--en);font-weight:700;font-size:46px;line-height:.86;color:var(--honey)}
+  .rail .bf span{display:block;color:transparent;-webkit-text-stroke:1.5px var(--honey)}
+  .rail .rd8{margin-top:12px;font-family:var(--en);font-weight:600;font-size:20px;line-height:1.5;color:#fff}
+  .rail .rd8 small{font-family:var(--jp);font-size:13px;color:#cdbb9c}
+  .rail nav{margin-top:16px;border-top:1px solid var(--line-d)}
+  .rail nav a{display:flex;gap:10px;padding:11px 2px;border-bottom:1px solid var(--line-d);font-size:15px;font-weight:700;color:#fff}
+  .rail nav a span{font-family:var(--en);color:var(--honey);font-size:14px;width:20px}
+  .rail nav a:hover{color:var(--honey)}
+  .rail .rc{background:var(--honey);color:var(--ink);border-radius:14px;padding:12px 10px;text-align:center}
+  .rail .rc p{font-size:14px;font-weight:700}
+  .rail .rc .v{font-family:var(--en);font-weight:700;font-size:24px;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .rail .rc .v small{font-family:var(--jp);font-size:12px;margin:0 2px}
+  .rail .pick{display:block;margin-top:10px;border:2px solid var(--honey);border-radius:16px;overflow:hidden;text-align:center;background:var(--black2);box-shadow:0 0 18px rgba(255,194,26,.25)}
+  .rail .pick img{width:100%;aspect-ratio:1/1}
+  .rail .pick p{font-size:14px;font-weight:700;padding-top:8px}
+  .rail .pick .off{color:var(--honey);font-size:52px;margin:4px 0 2px}
+  .rail .pick .bt{display:block;margin:6px 10px 12px;background:var(--g-honey);color:var(--ink);border-radius:999px;font-size:15px;font-weight:700;padding:7px 0}
+  .rail .mt{display:block;margin-top:10px;background:var(--cream);color:var(--ink);border-radius:14px;padding:10px;text-align:center;font-size:14px;font-weight:700}
+  .rail .mt b{color:var(--red);font-family:var(--en);font-size:28px}
+}
+
+/* ---- SP ---- */
+@media (max-width:599px){
+  .hd .logo{font-size:18px;letter-spacing:.24em}
+  .hd small{font-size:14px}
+  .fv-tape{top:70px;font-size:16px}
+  .jars{gap:6px;margin:20px 10px 0}
+  .jars a{border-radius:10px}
+  .it-b{grid-template-columns:40% 1fr;gap:12px}
+  .buys{gap:8px;padding:12px 10px}
+  .buy{padding:10px 6px}
+  .eb-row{grid-template-columns:96px 1fr}
+  .how div{font-size:15px}
+  .why li{grid-template-columns:52px 1fr}
+  .why li .n{font-size:38px}
+}
+@media (max-width:374px){
+  .buy .q{font-size:15px;padding:1px 10px}
+  .rd .st{font-size:14px;padding:1px 6px}
+}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.mq .run,.jars a,.drip *,.rd .st.live{animation:none}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- PC 両脇 -->
+<aside class="rail l" aria-label="ページ内メニュー">
+  <p class="bf">BLACK<span>FRIDAY</span></p>
+  <p class="rd8">11.19 <small>(木)</small>20:00〜<br>11.25 <small>(水)</small>1:59</p>
+  <nav>
+    <a href="#coupon"><span>01</span>3回のクーポン</a>
+    <a href="#items"><span>02</span>商品とクーポン価格</a>
+    <a href="#matome"><span>03</span>まとめ買いクーポン</a>
+    <a href="#why"><span>04</span>グリーンベイのこだわり</a>
+    <a href="#etc"><span>05</span>ほかのマヌカハニー</a>
+  </nav>
+</aside>
+<aside class="rail r" aria-label="いま使えるクーポン">
+  <div class="rc"><p data-cd-lbl2>ブラックフライデー開始まで</p><p class="v" data-cd-mini></p></div>
+  <a class="pick" href="#it-gb10">
+    <img src="img/gb10.jpg" alt="プレミアムマヌカハニー UMF10+">
+    <p>UMF10+ が1個から</p>
+    <span class="off" data-pick-off></span>
+    <span class="bt">クーポン価格を見る</span>
+  </a>
+  <a class="mt" href="#matome">まとめ買いクーポン配布中<br>3個以上で<b>47%</b>OFF</a>
+</aside>
+
+<div class="page" id="top">
+  <div class="draft">確認用ページです</div>
+
+  <header class="hd">
+    <div><span class="logo">GREEN BAY</span><small>マヌカハニー専門 グリーンベイ</small></div>
+    <a class="top" href="https://www.rakuten.co.jp/manuka/">ショップトップ</a>
+  </header>
+
+  <!-- FV -->
+  <section class="fv">
+    <svg class="drip" viewBox="0 0 700 120" preserveAspectRatio="none" aria-hidden="true">
+      <defs><linearGradient id="hg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e98d0c"/><stop offset=".6" stop-color="#ffb000"/><stop offset="1" stop-color="#ffd75a"/></linearGradient></defs>
+      <path d="M0 0H700V22C660 26 640 30 610 28C580 26 560 34 520 30C480 26 450 22 410 30C370 38 340 26 300 26C260 26 240 34 200 30C160 26 130 24 100 30C70 36 40 26 0 30Z" fill="url(#hg)"/>
+      <rect class="d" x="118" y="22" width="22" height="60" rx="11" fill="url(#hg)"/>
+      <rect class="d d2" x="335" y="22" width="26" height="78" rx="13" fill="url(#hg)"/>
+      <rect class="d d3" x="560" y="24" width="18" height="44" rx="9" fill="url(#hg)"/>
+      <circle class="drop" cx="348" cy="104" r="9" fill="#ffc21a"/>
+    </svg>
+        <p class="fv-catch">毎日のひとさじを、<br><em>ブラックフライデー価格</em>で。</p>
+    <h1 class="fv-title" aria-label="BLACK FRIDAY"><span class="l1">BLACK</span><span class="l2">FRIDAY</span></h1>
+    <p class="fv-date">11.19<i>木</i>20:00<span class="ar"></span>11.25<i>水</i>1:59</p>
+    <div class="jars">
+      <a href="#it-pm08"><img src="img/pm08.jpg" alt="マヌカハニー UMF8+"><span>UMF8+</span></a>
+      <a href="#it-gb10"><img src="img/gb10.jpg" alt="プレミアムマヌカハニー UMF10+"><span>UMF10+</span></a>
+      <a href="#it-gb15"><img src="img/gb15.jpg" alt="プレミアムマヌカハニー UMF15+"><span>UMF15+</span></a>
+      <a href="#it-gb20"><img src="img/gb20.jpg" alt="プレミアムマヌカハニー UMF20+"><span>UMF20+</span></a>
+    </div>
+    <div class="fv-now">
+      <span class="lbl" data-fv-lbl>いま使えるクーポン</span>
+      <span class="rn" data-fv-rn></span>
+      <div class="fv-big">
+        <div><p>1個から最大</p><span class="off" data-fv-1></span></div>
+        <div><p>2個で最大</p><span class="off" data-fv-2></span></div>
+      </div>
+      <a class="go" href="#coupon">クーポンと価格を見る</a>
+    </div>
+    <a class="fv-matome" href="#matome"><span>まとめ買いクーポン配布中<br>3個以上で最大</span><span class="off"><b>47</b><span class="off__u"><i class="p">%</i><i class="o">OFF</i></span></span></a>
+  </section>
+
+  <div class="mq" aria-hidden="true"><div class="run" data-dup><span>BLACK</span><span>FRIDAY</span><span>MANUKA</span><span>HONEY</span></div></div>
+  <div class="cd">
+    <p class="cd-lbl" data-cd-lbl>ブラックフライデー開始まで</p>
+    <div class="cd-num" data-cd-num></div>
+  </div>
+
+  <!-- 01 3回のクーポン -->
+  <section class="sec" id="coupon">
+    <div class="inner">
+      <span class="kick rv">01 COUPON</span>
+      <h2 class="h2 rv">クーポンは<em>3回</em>に分けて配布</h2>
+      <p class="lead rv">期間ごとに割引額が変わります。<br>いま使えるクーポンが自動で表示されます。</p>
+      <div class="rounds" data-rounds></div>
+      <div class="rinfo" data-rinfo></div>
+      <div class="how rv">
+        <div><b>1</b>クーポンを<br>獲得</div><i></i>
+        <div><b>2</b>カートに<br>入れる</div><i></i>
+        <div><b>3</b>購入時に<br>選ぶ</div>
+      </div>
+
+      <div class="guide">
+        <h3 class="rv">どれにするか迷ったら<br><em>UMFの数字</em>を見てください</h3>
+        <p class="gl rv">数字が大きいほど、MGO(メチルグリオキサール)を多く含む希少なマヌカハニーです。</p>
+        <div class="bars" data-bars></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 商品 -->
+  <section class="sec" id="items" style="padding-top:0">
+    <div class="inner">
+      <span class="kick rv">02 ITEMS</span>
+      <h2 class="h2 rv">クーポンを使うと<br><em>この価格</em>になります</h2>
+      <p class="lead rv" data-items-lead></p>
+      <div class="items" data-items></div>
+    </div>
+  </section>
+
+  <!-- 03 まとめ買い(常設) -->
+  <section class="sec mat" id="matome">
+    <div class="inner">
+      <span class="kick rv">03 MATOME</span>
+      <h2 class="h2 rv">まとめ買いクーポン配布中<br>3個以上で<em>最大47%OFF</em></h2>
+      <p class="lead rv">家族で使う方、ストックしておきたい方に。3個以上なら、1個あたりの価格がいちばん下がります。</p>
+      <div class="mgrid" data-matome></div>
+      <div class="note">
+        <p>※まとめ買いクーポンは、ブラックフライデー期間以外も同じ割引率で配布している常設のクーポンです。</p>
+        <p>※4個以上も同じ割引率です。1回のご注文で同じ商品を3個以上お買い上げの場合に使えます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 こだわり -->
+  <section class="why" id="why">
+    <div class="why-ph"><img src="img/leaves.jpg" alt="グリーンベイのマヌカハニー" loading="lazy"></div>
+    <div class="inner why-in">
+      <span class="kick rv">04 GREEN BAY</span>
+      <h2 class="h2 rv">おトクでも、<br><em>品質はそのまま。</em></h2>
+      <p class="lead rv">マヌカハニー専門店として、選び方から届け方までこだわっています。</p>
+      <ol>
+        <li class="rv"><span class="n">01</span><div><h3>毎年ニュージーランドへ現地視察</h3><p>生産者や養蜂場を自分たちの目で確かめて選んでいます。</p></div></li>
+        <li class="rv"><span class="n">02</span><div><h3>リーファーコンテナで輸入</h3><p>温度を管理できるコンテナで、日本まで運んでいます。</p></div></li>
+        <li class="rv"><span class="n">03</span><div><h3>日本に届いてからも再検査</h3><p>国内でもあらためて検査を行い、数値を確かめています。</p></div></li>
+        <li class="rv"><span class="n">04</span><div><h3>生キャラメルのような、なめらかさ</h3><p>クセが少なくクリーミー。そのままひとさじでも、ヨーグルトやトーストにも。</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 05 常設 -->
+  <section class="sec etc" id="etc">
+    <div class="inner">
+      <span class="kick rv">05 MORE</span>
+      <h2 class="h2 rv">ほかのマヌカハニーも<br><em>クーポン</em>でおトクに</h2>
+      <div class="eb rv">
+        <h3>プレミアム UMF5+ が2個で半額</h3>
+        <span class="until">11/30(月) 23:59まで</span>
+        <div class="eb-row">
+          <a href="https://item.rakuten.co.jp/manuka/gb05/"><img src="img/gb05.jpg" alt="プレミアムマヌカハニー UMF5+" loading="lazy"></a>
+          <div>
+            <p class="nm">プレミアムマヌカハニー<small>UMF5+ MGO83+ 250g　3,980円</small></p>
+            <span class="off"><span class="pre">2個で</span><b>50</b><span class="off__u"><i class="p">%</i><i class="o">OFF</i></span></span>
+          </div>
+        </div>
+        <a class="btn" href="https://coupon.rakuten.co.jp/getCoupon?getkey=UUg3Vy1CU09BLVNFSVYtQ0YyQw--&rt=">2個で50%OFFクーポン</a>
+        <a class="btn ln" style="margin-top:8px" href="https://item.rakuten.co.jp/manuka/gb05/">UMF5+の商品ページへ</a>
+      </div>
+      <div class="eb rv">
+        <h3>UMF12+・16+・22+ は<br>買うほどおトク</h3>
+        <span class="until">11/30(月) 23:59まで</span>
+        <div class="eb3">
+          <a href="https://item.rakuten.co.jp/manuka/pm12/"><img src="img/pm12.jpg" alt="マヌカハニー UMF12+" loading="lazy"><b>UMF12+</b><small>3,980円</small></a>
+          <a href="https://item.rakuten.co.jp/manuka/pm16/"><img src="img/pm16.jpg" alt="マヌカハニー UMF16+" loading="lazy"><b>UMF16+</b><small>4,780円</small></a>
+          <a href="https://item.rakuten.co.jp/manuka/gb22/"><img src="img/gb22.jpg" alt="プレミアムマヌカハニー UMF22+" loading="lazy"><b>UMF22+</b><small>12,800円</small></a>
+        </div>
+        <div class="stairs">
+          <a href="https://coupon.rakuten.co.jp/getCoupon?getkey=V1lMSS1LVEJVLVJXTFEtWjhJUg--&rt="><span class="q"><b>1</b>個で</span><span class="off"><b>500</b><span class="off__u"><i class="y">円</i><i class="o">OFF</i></span></span><span class="g">獲得する</span></a>
+          <a href="https://coupon.rakuten.co.jp/getCoupon?getkey=TldEMC1IVUhHLUFHTkgtR0JZQQ--&rt="><span class="q"><b>2</b>個で</span><span class="off"><b>1,200</b><span class="off__u"><i class="y">円</i><i class="o">OFF</i></span></span><span class="g">獲得する</span></a>
+          <a href="https://coupon.rakuten.co.jp/getCoupon?getkey=SDNESy1WRVRLLUNXRzctU1FJWg--&rt="><span class="q"><b>3</b>個で</span><span class="off"><b>2,100</b><span class="off__u"><i class="y">円</i><i class="o">OFF</i></span></span><span class="g">獲得する</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="notes">
+    <h3>ご注意ください</h3>
+    <div class="note">
+      <p>※クーポンはすべて通常購入のみ対象です（定期購入には使えません）。</p>
+      <p>※クーポンの併用・分割発送はできません。各クーポンはお一人様1回までです。</p>
+      <p>※「先着150名」のクーポンは、なくなり次第終了します。</p>
+      <p>※11/24(火)20:00〜11/25(水)1:59は②と③の両方のクーポンが使えます。割引の大きいほうをお選びください。</p>
+      <p>※2個用・3個用クーポンには金額の条件があります。各商品の表示をご確認ください。</p>
+      <p>※価格は2026年11月18日時点の税込価格です。クーポン適用後の価格は目安です。最新の価格・在庫は各商品ページでご確認ください。</p>
+      <p>※はちみつは1歳未満の乳児には与えないでください。</p>
+    </div>
+  </div>
+
+  <div class="mq" aria-hidden="true"><div class="run" data-dup><span>THANK</span><span>YOU</span><span>GREEN</span><span>BAY</span></div></div>
+
+  <footer class="ft">
+    <p class="logo">GREEN BAY</p>
+    <small>マヌカハニー専門 グリーンベイ 楽天市場店</small>
+    <a class="btn dk" href="https://www.rakuten.co.jp/manuka/">ショップトップへ</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var CG = "https://coupon.rakuten.co.jp/getCoupon?getkey=";
+  var T = function(s){ return new Date(s + ":00+09:00").getTime(); };
+
+  // 商品
+  var ITEMS = [
+    {id:"pm08", umf:"8+",  mgo:"MG180+",  line:"THE PRIMAL", name:"マヌカハニー UMF8+ MG180+ 250g", price:3980, min2:4000,  rate:40, min3:10000,
+     copy:"毎日たっぷり使いたい方に。ヨーグルトやトーストにも気軽にかけられます。"},
+    {id:"gb10", umf:"10+", mgo:"MGO261+", line:"PREMIUM", name:"プレミアムマヌカハニー UMF10+ MGO261+ 250g", price:4930, min2:5000,  rate:47, min3:10000,
+     copy:"はじめての方にも。生キャラメルのような、クセの少ないなめらかさ。"},
+    {id:"gb15", umf:"15+", mgo:"MGO512+", line:"PREMIUM", name:"プレミアムマヌカハニー UMF15+ MGO512+ 250g", price:5980, min2:6000,  rate:40, min3:12000,
+     copy:"もう一段上を選びたい方に。濃厚でコクのある味わいです。"},
+    {id:"gb20", umf:"20+", mgo:"MGO826+", line:"PREMIUM", name:"プレミアムマヌカハニー UMF20+ MGO826+ 250g", price:9480, min2:10000, rate:35, min3:19000,
+     copy:"MGO826+の希少なマヌカハニー。ここぞという日のひとさじに。"}
+  ];
+
+  // 回ごとのクーポン [1個OFF, 2個OFF, 1個用key, 2個用key, 3個用key]
+  var ROUNDS = [
+    {no:"①", tab:"ご愛顧<br>感謝デー", name:"ご愛顧感謝デー", sub:"72時間限定クーポン", start:T("2026-11-18T00:00"), end:T("2026-11-20T23:59")+59000,
+     dt:"11/18<small>(水)</small>0:00〜<br>11/20<small>(金)</small>23:59", tdt:"11/18<small>(水)</small><br>〜11/20<small>(金)</small>", first:true, p5:true,
+     c:{pm08:[1400,3000,"OFdBQy1FUFdSLVo0QU8tMFdSSA--","MkdWNS01MUk1LU81S1EtNFZERA--","SjZDTS1VOEFULVNRRE8tVE5MUg--"],
+        gb10:[2050,4450,"T0RWSi1IRFFMLU9IRDUtV0ozTQ--","VUwwRS1RUERPLUdJVVAtOERQMw--","WVFDMi1aQ09QLVVQU04tSVI3UQ--"],
+        gb15:[2000,4600,"U1BaSC1RWVRILTJTSlotSFoxRw--","NEJYUC1XWU9ILU0xOFEtRVVSWg--","UkRYQy1LUU5LLTQ2ODUtM0tVSw--"],
+        gb20:[3100,6400,"SDJEVy1FU0pLLVhSWlctMktFRw--","OVAySy1MVTZCLVg0SFotSFZUVw--","WEtNSC03NjNBLU1BSEwtWUpPTw--"]}},
+    {no:"②", tab:"ブラック<br>フライデー", name:"ブラックフライデークーポン", sub:"枚数制限なし", start:T("2026-11-21T00:00"), end:T("2026-11-25T01:59")+59000,
+     dt:"11/21<small>(土)</small>0:00〜<br>11/25<small>(水)</small>1:59", tdt:"11/21<small>(土)</small><br>〜11/25<small>(水)</small>", first:false, p5:false,
+     c:{pm08:[1300,2800,"WlFZUy00Qk9PLTlPN00tRVZVRQ--","S09SMC1aRzlXLVNKUkwtWTkxWA--","NzlLTy1QUlVCLTRaS1gtWUdUWg--"],
+        gb10:[1950,4350,"VjJHUy1USFNHLVlNVFAtSEdGVQ--","S1BQWS1ZV09RLUlUUTYtNFBEQw--","OFZLTi1YTlhRLUVCWDktRzNJSw--"],
+        gb15:[1900,4450,"MkhVWC1NWU9QLVhWOEUtMVA5Sw--","VEJPMC1LVDcwLTlZVVktNUlFSA--","TUk0Sy0yRjdELUtLSzEtNzNNVg--"],
+        gb20:[3000,6200,"UE1GSC1aUjBLLUszNVMtTlNJNg--","U0hXRC0zM0dHLTE3WFUtV1JNUg--","TkpBRS1HS1lKLUVBTjQtWFhCTA--"]}},
+    {no:"③", tab:"5のつく日<br>28時間", name:"5のつく日", sub:"28時間限定クーポン", start:T("2026-11-24T20:00"), end:T("2026-11-25T23:59")+59000,
+     dt:"11/24<small>(火)</small>20:00〜<br>11/25<small>(水)</small>23:59", tdt:"11/24<small>(火)</small><br>〜11/25<small>(水)</small>", first:true, p5:false,
+     c:{pm08:[1350,2900,"QVZGWi0zS1VDLUlCVFUtUzdEQQ--","MlRHMS1ZUllVLUVCV0gtUDRMVw--","STFNUC1UN1c1LUlOVVItRFNXSA--"],
+        gb10:[2000,4400,"QkhUTC1IWkVRLUw0TkUtS0xPMg--","VlNOWC1UQkxULVBGRUEtN05IMg--","TlcxWC1WWlFOLTVCUFotVFBLQw--"],
+        gb15:[1950,4500,"UjZGSC1URUJFLUgyS0QtSUhBTw--","S0dGNC0yQ0NULTZNQU8tSVVEVw--","U0pKNi1BS0RULVNGVUMtOENaSA--"],
+        gb20:[3050,6300,"NEtYMy1JTldDLVRCS08tRDZENA--","TFJJSC1MTUNLLURFVjgtSTgwNw--","OEpTWi1UVUgzLVpERU4tVU1IVw--"]}}
+  ];
+  var BF_START = T("2026-11-19T20:00"), BF_END = T("2026-11-25T01:59") + 59000;
+
+  // 確認用: ?now=2026-11-22T10:00
+  var q = location.search.match(/now=([\dT:-]+)/);
+  var offset = q ? T(q[1]) - Date.now() : 0;
+  var now = function(){ return Date.now() + offset; };
+
+  var yen = function(n){ return n.toLocaleString("ja-JP"); };
+  var offHTML = function(n, unit){
+    return unit === "%" ? '<b>' + n + '</b><span class="off__u"><i class="p">%</i><i class="o">OFF</i></span>'
+                        : '<b>' + yen(n) + '</b><span class="off__u"><i class="y">円</i><i class="o">OFF</i></span>';
+  };
+  var $ = function(s){ return document.querySelector(s); };
+  var $$ = function(s){ return Array.prototype.slice.call(document.querySelectorAll(s)); };
+
+  function status(r, t){ return t < r.start ? "soon" : (t > r.end ? "end" : "live"); }
+  function autoRound(t){
+    var live = ROUNDS.filter(function(r){ return status(r, t) === "live"; });
+    if (live.length) return ROUNDS.indexOf(live[live.length - 1]);
+    for (var i = 0; i < ROUNDS.length; i++) if (t < ROUNDS[i].start) return i;
+    return ROUNDS.length - 1;
+  }
+  var sel = autoRound(now());
+  var userPicked = false;
+
+  function matomePrice(it){
+    var total = it.price * 3, d = Math.floor(total * it.rate / 100);
+    return {total: total - d, per: Math.round((total - d) / 3)};
+  }
+
+  function renderRounds(){
+    var t = now();
+    $("[data-rounds]").innerHTML = ROUNDS.map(function(r, i){
+      var st = status(r, t);
+      var lab = st === "live" ? "開催中" : (st === "soon" ? "これから" : "終了");
+      return '<button type="button" class="rd ' + (i === sel ? "on " : "") + (st === "end" ? "end" : "") + '" data-i="' + i + '">' +
+        '<span class="no">' + r.no + '</span><span class="nm">' + r.tab + '</span><span class="dt">' + r.tdt + '</span>' +
+        '<span class="st ' + st + '">' + lab + '</span></button>';
+    }).join("");
+    $$("[data-rounds] .rd").forEach(function(b){
+      b.addEventListener("click", function(){ sel = +b.getAttribute("data-i"); userPicked = true; renderAll(); });
+    });
+  }
+
+  function renderInfo(){
+    var r = ROUNDS[sel], t = now(), st = status(r, t);
+    var tags = '<span class="tag">' + r.sub + '</span>';
+    if (r.first) tags += '<span class="tag r">1個用・2個用は先着150名様</span>';
+    if (r.p5) tags += '<span class="tag k">期間中 店内全品ポイント<b>5</b>倍</span>';
+    var head = st === "live" ? "<b>開催中</b>のクーポン" : (st === "soon" ? "これから始まるクーポン" : "このクーポンは終了しました");
+    var html = '<p class="t">' + r.no + r.name + '　' + head + '</p>' +
+      '<p class="when">' + r.dt.replace("<br>", " ") + '</p><div class="tags">' + tags + '</div>' +
+      '<p class="cdx" data-cdx></p>';
+    if (sel === 0) html += '<p class="both">ブラックフライデーは11/19(木)20:00スタート。このクーポンはその前から使えます。</p>';
+    if (sel === 2) html += '<p class="both">11/24(火)20:00〜11/25(水)1:59は②と③の両方が使えます。割引の大きいほうをお選びください。</p>';
+    $("[data-rinfo]").innerHTML = html;
+    $("[data-items-lead]").textContent = r.no + r.name + "（" + r.dt.replace(/<[^>]+>/g, "").replace("〜", " 〜 ") + "）の価格です。";
+  }
+
+  function renderItems(){
+    var r = ROUNDS[sel], st = status(r, now());
+    var dis = st === "end" ? " dis" : "";
+    var lbl = st === "end" ? "終了しました" : (st === "soon" ? "開始前です" : "");
+    $("[data-items]").innerHTML = ITEMS.map(function(it){
+      var c = r.c[it.id];
+      var p1 = it.price - c[0], p2 = it.price * 2 - c[1], m = matomePrice(it);
+      var url = "https://item.rakuten.co.jp/manuka/" + it.id + "/";
+      return '<article class="it" id="it-' + it.id + '">' +
+        '<div class="it-h"><span class="u">UMF' + it.umf + '</span><span class="m">' + it.mgo + '</span><span class="ln">' + it.line + '</span></div>' +
+        '<div class="it-b"><a href="' + url + '"><img src="img/' + it.id + '.jpg" alt="' + it.name + '" loading="lazy"></a>' +
+          '<div><p class="nm">' + it.name + '</p><p class="cp">' + it.copy + '</p><p class="reg">通常 <b>' + yen(it.price) + '</b>円</p></div></div>' +
+        '<div class="buys">' +
+          '<div class="buy"><span class="q"><b>1</b>個なら</span><span class="off">' + offHTML(c[0]) + '</span>' +
+            '<p class="pr">クーポン利用で<b>' + yen(p1) + '<u>円</u></b></p><span class="sp"></span>' +
+            '<a class="btn' + dis + '" href="' + CG + c[2] + '&rt=">' + (lbl || "1個用クーポン") + '</a></div>' +
+          '<div class="buy"><span class="q"><b>2</b>個なら</span><span class="off">' + offHTML(c[1]) + '</span>' +
+            '<p class="pr">2個で<b>' + yen(p2) + '<u>円</u></b></p><p class="per">1個あたり <span>' + yen(p2 / 2) + '</span>円</p>' +
+            '<p class="cond">' + yen(it.min2) + '円以上で利用可</p><span class="sp"></span>' +
+            '<a class="btn' + dis + '" href="' + CG + c[3] + '&rt=">' + (lbl || "2個用クーポン") + '</a></div>' +
+        '</div>' +
+        '<div class="it-f"><a class="btn ln" href="' + url + '">商品ページを見る</a>' +
+          '<a class="mt" href="#matome">3個以上ならまとめ買いクーポンで <b>' + it.rate + '%OFF</b>（1個あたり約' + yen(m.per) + '円）</a></div>' +
+      '</article>';
+    }).join("");
+  }
+
+  function renderMatome(){
+    var r = ROUNDS[sel];
+    $("[data-matome]").innerHTML = ITEMS.map(function(it){
+      var m = matomePrice(it);
+      return '<div class="mc"><img src="img/' + it.id + '.jpg" alt="' + it.name + '" loading="lazy">' +
+        '<p class="u">UMF' + it.umf + '<small>' + yen(it.price) + '円</small></p>' +
+        '<p class="q">3個以上で</p><span class="off">' + offHTML(it.rate, "%") + '</span>' +
+        '<p class="pr">3個で<b>' + yen(m.total) + '<u>円</u></b></p><p class="per">1個あたり約<span>' + yen(m.per) + '</span>円</p>' +
+        '<p class="cond">' + yen(it.min3) + '円以上で利用可</p>' +
+        '<a class="btn" href="' + CG + r.c[it.id][4] + '&rt=">クーポンを獲得</a></div>';
+    }).join("");
+  }
+
+  function renderFV(){
+    var t = now(), i = autoRound(t), r = ROUNDS[i], st = status(r, t);
+    var max1 = 0, max2 = 0;
+    ITEMS.forEach(function(it){ max1 = Math.max(max1, r.c[it.id][0]); max2 = Math.max(max2, r.c[it.id][1]); });
+    $("[data-fv-lbl]").textContent = st === "live" ? "いま使えるクーポン" : (st === "soon" ? "次のクーポン" : "クーポンは終了しました");
+    $("[data-fv-rn]").innerHTML = r.no + r.name + '<small>' + r.dt.replace(/<[^>]+>/g, "").replace("〜", "〜 ") + (r.first ? "<br>1個用・2個用は先着150名様" : "") + '</small>';
+    $("[data-fv-1]").innerHTML = offHTML(max1);
+    $("[data-fv-2]").innerHTML = offHTML(max2);
+    var pk = $("[data-pick-off]"); if (pk) pk.innerHTML = offHTML(r.c.gb10[0]);
+  }
+
+  function renderBars(){
+    var list = [{u:"8+", m:180, id:"pm08"}, {u:"10+", m:261, id:"gb10"}, {u:"15+", m:512, id:"gb15"}, {u:"20+", m:826, id:"gb20"}];
+    var tx = {pm08:"毎日たっぷり派に", gb10:"はじめての方にも", gb15:"しっかり選びたい方に", gb20:"希少な高MGO"};
+    $("[data-bars]").innerHTML = list.map(function(b){
+      var w = Math.round(b.m / 826 * 100);
+      return '<a class="bar" href="#it-' + b.id + '"><span class="u">' + b.u + '<small>MGO' + b.m + '+</small></span>' +
+        '<span><span class="tr" style="display:block"><span class="fill" data-w="' + w + '"></span></span><span class="tx">' + tx[b.id] + '</span></span></a>';
+    }).join("");
+  }
+
+  function renderAll(){ renderRounds(); renderInfo(); renderItems(); renderMatome(); }
+
+  // カウントダウン
+  function fmt(ms){
+    var s = Math.max(0, Math.floor(ms / 1000));
+    return {d: Math.floor(s / 86400), h: Math.floor(s % 86400 / 3600), m: Math.floor(s % 3600 / 60), s: s % 60};
+  }
+  var pad = function(n){ return n < 10 ? "0" + n : "" + n; };
+  function tick(){
+    var t = now(), lbl, target;
+    if (t < BF_START) { lbl = "ブラックフライデー開始まで"; target = BF_START; }
+    else if (t <= BF_END) { lbl = "ブラックフライデー終了まで"; target = BF_END; }
+    else if (t <= ROUNDS[2].end) { lbl = "5のつく日クーポン終了まで"; target = ROUNDS[2].end; }
+    else { lbl = "ブラックフライデーは終了しました"; target = null; }
+    $("[data-cd-lbl]").textContent = lbl;
+    var l2 = $("[data-cd-lbl2]"); if (l2) l2.textContent = lbl;
+    var f = target ? fmt(target - t) : null;
+    $("[data-cd-num]").innerHTML = f ? '<span class="num">' + f.d + '</span><small>日</small><span class="num">' + pad(f.h) + '</span><small>時間</small><span class="num">' + pad(f.m) + '</span><small>分</small><span class="num">' + pad(f.s) + '</span><small>秒</small>' : "";
+    var mini = $("[data-cd-mini]"); if (mini) mini.innerHTML = f ? f.d + '<small>日</small>' + pad(f.h) + '<small>時間</small>' + pad(f.m) + '<small>分</small>' + pad(f.s) + '<small>秒</small>' : "";
+    var r = ROUNDS[sel], st = status(r, t), cdx = $("[data-cdx]");
+    if (cdx) {
+      var g = fmt((st === "soon" ? r.start : r.end) - t);
+      cdx.innerHTML = st === "end" ? "" : (st === "soon" ? "開始まで" : "このクーポンの終了まで") + '<br><b>' + g.d + '</b>日 <b>' + pad(g.h) + '</b>時間 <b>' + pad(g.m) + '</b>分 <b>' + pad(g.s) + '</b>秒';
+    }
+    // 回の切り替わりを自動反映
+    var a = autoRound(t);
+    if (!userPicked && a !== sel) { sel = a; renderAll(); renderFV(); }
+  }
+
+  $$("[data-dup]").forEach(function(el){ el.innerHTML += el.innerHTML; });
+  renderFV(); renderBars(); renderAll(); tick();
+  setInterval(tick, 1000);
+
+  // 表示アニメーション
+  var io = "IntersectionObserver" in window ? new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return;
+      e.target.classList.add("in");
+      $$(".fill").forEach(function(f){ if (e.target.contains(f)) f.style.width = f.getAttribute("data-w") + "%"; });
+      io.unobserve(e.target);
+    });
+  }, {threshold: .15}) : null;
+  $$(".rv, [data-bars]").forEach(function(el){ io ? io.observe(el) : el.classList.add("in"); });
+  if (!io) $$(".fill").forEach(function(f){ f.style.width = f.getAttribute("data-w") + "%"; });
+})();
+</script>
+</body>
+</html>

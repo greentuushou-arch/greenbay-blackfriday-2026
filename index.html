@@ -190,7 +190,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .it-h .ln{white-space:nowrap;font-size:14px;font-weight:700;border:1.5px solid var(--honey);color:var(--honey);border-radius:6px;padding:1px 8px}
 .it-b{display:grid;grid-template-columns:44% 1fr;gap:14px;padding:14px 14px 0;align-items:center}
 .it-b img{width:100%;aspect-ratio:1/1;border-radius:14px}
-.it-b .nm{font-size:min(4.6vw,20px);font-weight:700;line-height:1.45}
+.it-b .nm{font-size:min(3.9vw,20px);font-weight:700;line-height:1.45;letter-spacing:.02em}
+.nw{white-space:nowrap}
 .it-b .cp{font-size:16px;line-height:1.6;margin-top:6px;color:#4a3a28}
 .it-b .reg{margin-top:8px;font-size:16px;font-weight:700;color:var(--sub)}
 .it-b .reg b{font-family:var(--en);font-size:22px}
@@ -198,12 +199,12 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .buy{background:#fff;border-radius:16px;border:1.5px solid var(--line);padding:12px 8px 12px;text-align:center;display:flex;flex-direction:column}
 .buy .q{display:inline-block;align-self:center;background:var(--ink);color:#fff;font-weight:700;font-size:17px;border-radius:999px;padding:1px 14px}
 .buy .q b{font-family:var(--en);font-size:1.2em;color:var(--honey)}
-.buy .off{color:var(--red);font-size:min(11vw,54px);margin-top:10px;justify-content:center}
+.buy .off{color:var(--red);font-size:min(9.6vw,54px);margin-top:10px;justify-content:center}
 .buy .pr{margin-top:10px;font-size:15px;font-weight:700;color:var(--sub);line-height:1.3}
 .buy .pr b{display:block;font-family:var(--en);font-weight:700;font-size:min(9.6vw,46px);color:var(--ink);letter-spacing:-.01em;line-height:1.05;margin-top:2px}
 .buy .pr b u{text-decoration:none;font-family:var(--jp);font-size:.42em;margin-left:1px}
 .buy .per{white-space:nowrap;font-size:15px;font-weight:700;color:var(--red);margin-top:4px}
-.buy .per span{font-family:var(--en);font-size:1.25em}
+.buy .per span{display:block;font-family:var(--en);font-size:1.3em;line-height:1.2}
 .buy .cond{font-size:14px;color:var(--sub);margin-top:4px;line-height:1.4}
 .buy .btn{margin-top:auto;font-size:min(4.2vw,17px);padding:10px 6px;gap:6px}
 .buy .sp{flex:1;min-height:10px}
@@ -228,7 +229,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .mc .pr b{display:block;font-family:var(--en);font-size:min(7.6vw,34px);color:var(--ink);line-height:1.1}
 .mc .pr b u{text-decoration:none;font-family:var(--jp);font-size:.45em}
 .mc .per{white-space:nowrap;font-size:15px;font-weight:700;color:var(--red);margin-top:2px}
-.mc .per span{font-family:var(--en);font-size:1.2em}
+.mc .per span{display:block;font-family:var(--en);font-size:1.3em;line-height:1.2}
 .mc .cond{font-size:14px;color:var(--sub);margin-top:2px}
 .mc .btn{margin-top:auto;font-size:min(4vw,17px);padding:10px 6px;gap:4px}
 .mc .per{margin-bottom:10px}
@@ -244,7 +245,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .why li{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center;padding:16px 4px;border-bottom:1px solid var(--line-d)}
 .why li .n{font-family:var(--en);font-weight:600;font-size:46px;line-height:1;color:var(--honey);text-align:center}
 .why li h3{word-break:auto-phrase;font-size:min(5.2vw,22px);font-weight:700;line-height:1.4}
-.why li p{font-size:16px;color:#d8cbb4;margin-top:2px}
+.why li p{font-size:16px;color:#d8cbb4;margin-top:2px;word-break:auto-phrase}
 
 /* ---- 常設 ---- */
 .etc{background:var(--black2)}
@@ -445,9 +446,8 @@ body{background:#ffc21a}
   <!-- 01 3回のクーポン -->
   <section class="sec" id="coupon">
     <div class="inner">
-      <span class="kick rv">01 COUPON</span>
-      <h2 class="h2 rv">クーポンは<em>3回</em>に分けて配布</h2>
-      <p class="lead rv">期間ごとに割引額が変わります。<br>いま使えるクーポンが自動で表示されます。</p>
+      <h2 class="h2 rv">クーポンは<br><em>3回</em>に分けて配布</h2>
+      <p class="lead rv">期間ごとに割引額が変わります。<br>いま使える回が自動で表示されます。</p>
       <div class="rounds" data-rounds></div>
       <div class="rinfo" data-rinfo></div>
       <div class="how rv">
@@ -458,7 +458,7 @@ body{background:#ffc21a}
 
       <div class="guide">
         <h3 class="rv">どれにするか迷ったら<br><em>UMFの数字</em>を見てください</h3>
-        <p class="gl rv">数字が大きいほど、MGO(メチルグリオキサール)を多く含む希少なマヌカハニーです。</p>
+        <p class="gl rv">数字が大きいほど<br><span class="nw">MGO(メチルグリオキサール)を多く含む</span><br>希少なマヌカハニーです。</p>
         <div class="bars" data-bars></div>
       </div>
     </div>
@@ -467,7 +467,6 @@ body{background:#ffc21a}
   <!-- 02 商品 -->
   <section class="sec" id="items" style="padding-top:0">
     <div class="inner">
-      <span class="kick rv">02 ITEMS</span>
       <h2 class="h2 rv">クーポンを使うと<br><em>この価格</em>になります</h2>
       <p class="lead rv" data-items-lead></p>
       <div class="items" data-items></div>
@@ -477,9 +476,8 @@ body{background:#ffc21a}
   <!-- 03 まとめ買い(常設) -->
   <section class="sec mat" id="matome">
     <div class="inner">
-      <span class="kick rv">03 MATOME</span>
       <h2 class="h2 rv">まとめ買いクーポン配布中<br>3個以上で<em>最大47%OFF</em></h2>
-      <p class="lead rv">家族で使う方、ストックしておきたい方に。3個以上なら、1個あたりの価格がいちばん下がります。</p>
+      <p class="lead rv">家族で使う方、ストックしたい方に。<br>3個以上なら、1個あたりの価格が<br>いちばん下がります。</p>
       <div class="mgrid" data-matome></div>
       <div class="note">
         <p>※まとめ買いクーポンは、ブラックフライデー期間以外も同じ割引率で配布している常設のクーポンです。</p>
@@ -492,7 +490,6 @@ body{background:#ffc21a}
   <section class="why" id="why">
     <div class="why-ph"><img src="img/leaves.jpg" alt="グリーンベイのマヌカハニー" loading="lazy"></div>
     <div class="inner why-in">
-      <span class="kick rv">04 GREEN BAY</span>
       <h2 class="h2 rv">おトクでも、<br><em>品質はそのまま。</em></h2>
       <p class="lead rv">マヌカハニー専門店として、選び方から届け方までこだわっています。</p>
       <ol>
@@ -507,7 +504,6 @@ body{background:#ffc21a}
   <!-- 05 常設 -->
   <section class="sec etc" id="etc">
     <div class="inner">
-      <span class="kick rv">05 MORE</span>
       <h2 class="h2 rv">ほかのマヌカハニーも<br><em>クーポン</em>でおトクに</h2>
       <div class="eb rv">
         <h3>プレミアム UMF5+ が2個で半額</h3>
@@ -515,7 +511,7 @@ body{background:#ffc21a}
         <div class="eb-row">
           <a href="https://item.rakuten.co.jp/manuka/gb05/"><img src="img/gb05.jpg" alt="プレミアムマヌカハニー UMF5+" loading="lazy"></a>
           <div>
-            <p class="nm">プレミアムマヌカハニー<small>UMF5+ MGO83+ 250g　3,980円</small></p>
+            <p class="nm"><span class="nw">プレミアムマヌカハニー</span><small>UMF5+ MGO83+ 250g　3,980円</small></p>
             <span class="off"><span class="pre">2個で</span><b>50</b><span class="off__u"><i class="p">%</i><i class="o">OFF</i></span></span>
           </div>
         </div>
@@ -542,18 +538,17 @@ body{background:#ffc21a}
   <!-- 06 レシピ -->
   <section class="sec recipe" id="recipe">
     <div class="inner">
-      <span class="kick rv">06 RECIPE</span>
       <h2 class="h2 rv">届いたら、<em>どう食べる？</em></h2>
       <p class="lead rv">グリーンベイキッチンでは、日本全国のご当地食材とマヌカハニーを合わせたレシピを公開しています。</p>
       <div class="rc-grid">
-        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/wakayama-kaki/"><img src="img/recipe/r01.jpg" alt="和歌山の柿をちょっとおめかし。マヌカハニーのカプレーゼ風" loading="lazy"><span class="ar">和歌山県編</span><span class="nm">和歌山の柿をちょっとおめかし。マヌカハニーのカプレーゼ風</span></a>
-        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/gunma-yakimanju/"><img src="img/recipe/r02.jpg" alt="群馬名物・焼きまんじゅうの味噌だれをマヌカハニーで作ってみました" loading="lazy"><span class="ar">群馬県編</span><span class="nm">群馬名物・焼きまんじゅうの味噌だれをマヌカハニーで作ってみました</span></a>
-        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/hokkaido-chanchan/"><img src="img/recipe/r03.jpg" alt="北海道名物・マヌカ味噌で鮭ちゃんちゃん焼き" loading="lazy"><span class="ar">北海道編</span><span class="nm">北海道名物・マヌカ味噌で鮭ちゃんちゃん焼き</span></a>
-        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/yamaguchi-kawara/"><img src="img/recipe/r04.jpg" alt="山口県名物・マヌカハニーで甘辛牛肉の瓦そば" loading="lazy"><span class="ar">山口県編</span><span class="nm">山口県名物・マヌカハニーで甘辛牛肉の瓦そば</span></a>
-        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/saitama-gyoda-furai/"><img src="img/recipe/r05.jpg" alt="埼玉名物・行田フライの甘辛ソースをマヌカハニーで作ってみました" loading="lazy"><span class="ar">埼玉県編</span><span class="nm">埼玉名物・行田フライの甘辛ソースをマヌカハニーで作ってみました</span></a>
-        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/miyazaki-nanban/"><img src="img/recipe/r06.jpg" alt="宮崎名物・チキン南蛮をマヌカハニーでアレンジ" loading="lazy"><span class="ar">宮崎県編</span><span class="nm">宮崎名物・チキン南蛮をマヌカハニーでアレンジ</span></a>
-        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/kagoshima-gane/"><img src="img/recipe/r07.jpg" alt="鹿児島県名物・マヌカハニー入りがね" loading="lazy"><span class="ar">鹿児島県編</span><span class="nm">鹿児島県名物・マヌカハニー入りがね</span></a>
-        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/tochigi-nikkori/"><img src="img/recipe/r08.jpg" alt="にっこり梨とマヌカハニーの、にっこりオープンサンド" loading="lazy"><span class="ar">栃木県編</span><span class="nm">にっこり梨とマヌカハニーの、にっこりオープンサンド</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/wakayama-kaki/"><img src="img/recipe/r01.jpg" alt="和歌山の柿をちょっとおめかし。マヌカハニーのカプレーゼ風" loading="lazy"><span class="ar">和歌山県編</span><span class="nm">柿のマヌカハニー<br>カプレーゼ風</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/gunma-yakimanju/"><img src="img/recipe/r02.jpg" alt="群馬名物・焼きまんじゅうの味噌だれをマヌカハニーで作ってみました" loading="lazy"><span class="ar">群馬県編</span><span class="nm">焼きまんじゅうの<br>味噌だれ</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/hokkaido-chanchan/"><img src="img/recipe/r03.jpg" alt="北海道名物・マヌカ味噌で鮭ちゃんちゃん焼き" loading="lazy"><span class="ar">北海道編</span><span class="nm">マヌカ味噌で<br>鮭ちゃんちゃん焼き</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/yamaguchi-kawara/"><img src="img/recipe/r04.jpg" alt="山口県名物・マヌカハニーで甘辛牛肉の瓦そば" loading="lazy"><span class="ar">山口県編</span><span class="nm">甘辛牛肉の<br>瓦そば</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/saitama-gyoda-furai/"><img src="img/recipe/r05.jpg" alt="埼玉名物・行田フライの甘辛ソースをマヌカハニーで作ってみました" loading="lazy"><span class="ar">埼玉県編</span><span class="nm">行田フライの<br>甘辛ソース</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/miyazaki-nanban/"><img src="img/recipe/r06.jpg" alt="宮崎名物・チキン南蛮をマヌカハニーでアレンジ" loading="lazy"><span class="ar">宮崎県編</span><span class="nm">マヌカハニーで<br>チキン南蛮</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/kagoshima-gane/"><img src="img/recipe/r07.jpg" alt="鹿児島県名物・マヌカハニー入りがね" loading="lazy"><span class="ar">鹿児島県編</span><span class="nm">マヌカハニー入り<br>がね</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/tochigi-nikkori/"><img src="img/recipe/r08.jpg" alt="にっこり梨とマヌカハニーの、にっこりオープンサンド" loading="lazy"><span class="ar">栃木県編</span><span class="nm">にっこり梨の<br>オープンサンド</span></a>
       </div>
       <a class="btn hn rv" href="https://www.rakuten.co.jp/manuka/contents/topicslist/">レシピ・読みものをもっと見る</a>
     </div>
@@ -670,11 +665,11 @@ body{background:#ffc21a}
     var tags = '<span class="tag">' + r.sub + '</span>';
     if (r.first) tags += '<span class="tag r">1個用・2個用は先着150名様</span>';
     var head = st === "live" ? "<b>開催中</b>のクーポン" : (st === "soon" ? "これから始まるクーポン" : "このクーポンは終了しました");
-    var html = '<p class="t">' + r.no + r.name + '　' + head + '</p>' +
+    var html = '<p class="t">' + r.name + '<br>' + head + '</p>' +
       '<p class="when">' + r.dt.replace("<br>", " ") + '</p><div class="tags">' + tags + '</div>' + (r.p5 ? P5 : "") +
       '<p class="cdx" data-cdx></p>';
-    if (sel === 0) html += '<p class="both">ブラックフライデーは11/19(木)20:00スタート。このクーポンはその前から使えます。</p>';
-    if (sel === 2) html += '<p class="both">11/24(火)20:00〜11/25(水)1:59はブラックフライデークーポンと5のつく日クーポンの両方が使えます。割引の大きいほうをお選びください。</p>';
+    if (sel === 0) html += '<p class="both">このクーポンは<br>ブラックフライデーの開始前から使えます。</p>';
+    if (sel === 2) html += '<p class="both"><span class="nw">11/24(火)20:00〜11/25(水)1:59は</span><br>ブラックフライデークーポンと<br>5のつく日クーポンの両方が使えます。<br>割引の大きいほうをお選びください。</p>';
     $("[data-rinfo]").innerHTML = html;
     $("[data-items-lead]").textContent = r.no + r.name + "（" + r.dt.replace(/<[^>]+>/g, "").replace("〜", " 〜 ") + "）の価格です。";
   }
@@ -690,13 +685,13 @@ body{background:#ffc21a}
       return '<article class="it" id="it-' + it.id + '">' +
         '<div class="it-h"><span class="u">UMF' + it.umf + '</span><span class="m">' + it.mgo + '</span><span class="ln">' + it.line + '</span></div>' +
         '<div class="it-b"><a href="' + url + '"><img src="img/' + it.id + '.jpg" alt="' + it.name + '" loading="lazy"></a>' +
-          '<div><p class="nm">' + it.name + '</p><p class="cp">' + it.copy + '</p><p class="reg">通常 <b>' + yen(it.price) + '</b>円</p></div></div>' +
+          '<div><p class="nm"><span class="nw">' + it.name.replace(/ UMF.*/, "") + '</span><br><span class="nw">' + it.name.replace(/^.*? (UMF)/, "$1") + '</span></p><p class="cp">' + it.copy + '</p><p class="reg">通常 <b>' + yen(it.price) + '</b>円</p></div></div>' +
         '<div class="buys">' +
           '<div class="buy"><span class="q"><b>1</b>個なら</span><span class="off">' + offHTML(c[0]) + '</span>' +
             '<p class="pr">クーポン利用で<b>' + yen(p1) + '<u>円</u></b></p><span class="sp"></span>' +
             '<a class="btn' + dis + '" href="' + CG + c[2] + '&rt=">' + (lbl || "1個用クーポン") + '</a></div>' +
           '<div class="buy"><span class="q"><b>2</b>個なら</span><span class="off">' + offHTML(c[1]) + '</span>' +
-            '<p class="pr">2個で<b>' + yen(p2) + '<u>円</u></b></p><p class="per">1個あたり <span>' + yen(p2 / 2) + '</span>円</p>' +
+            '<p class="pr">2個で<b>' + yen(p2) + '<u>円</u></b></p><p class="per">1個あたり<span>' + yen(p2 / 2) + '円</span></p>' +
             '<span class="sp"></span>' +
             '<a class="btn' + dis + '" href="' + CG + c[3] + '&rt=">' + (lbl || "2個用クーポン") + '</a></div>' +
         '</div>' +
@@ -713,7 +708,7 @@ body{background:#ffc21a}
       return '<div class="mc"><img src="img/' + it.id + '.jpg" alt="' + it.name + '" loading="lazy">' +
         '<p class="u">UMF' + it.umf + '<small>' + yen(it.price) + '円</small></p>' +
         '<p class="q">3個以上で</p><span class="off">' + offHTML(it.rate, "%") + '</span>' +
-        '<p class="pr">3個で<b>' + yen(m.total) + '<u>円</u></b></p><p class="per">1個あたり約<span>' + yen(m.per) + '</span>円</p>' +
+        '<p class="pr">3個で<b>' + yen(m.total) + '<u>円</u></b></p><p class="per">1個あたり約<span>' + yen(m.per) + '円</span></p>' +
 
         '<a class="btn" href="' + CG + r.c[it.id][4] + '&rt=">クーポンを獲得</a></div>';
     }).join("");

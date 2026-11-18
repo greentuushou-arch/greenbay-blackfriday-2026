@@ -353,6 +353,24 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .buy .q{font-size:15px;padding:1px 10px}
   .rd .st{font-size:14px;padding:1px 6px}
 }
+
+/* ---- 両脇を黄色に ---- */
+body{background:#ffc21a}
+.page{box-shadow:0 0 0 1px rgba(0,0,0,.06),0 10px 50px rgba(120,70,0,.35)}
+@media (min-width:1240px){
+  .rail .bf{color:var(--ink)}
+  .rail .bf span{-webkit-text-stroke:1.5px var(--ink)}
+  .rail .rd8{color:var(--ink)}
+  .rail .rd8 small{color:#6b4a10}
+  .rail nav{border-top-color:rgba(35,26,16,.35)}
+  .rail nav a{color:var(--ink);border-bottom-color:rgba(35,26,16,.35)}
+  .rail nav a span{color:var(--red)}
+  .rail nav a:hover{color:var(--red)}
+  .rail .rc{background:var(--ink);color:#fff}
+  .rail .rc .v{color:var(--honey)}
+  .rail .today{box-shadow:0 8px 24px rgba(120,70,0,.3)}
+  .rail .mt{background:#fff}
+}
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
 .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.mq .run,.jars a,.glow i,.fv-title .l1,.rd .st.live{animation:none}.rv{opacity:1;transform:none}}

@@ -129,7 +129,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .rd{min-width:0;position:relative;text-align:center;border:2px solid var(--line-d);border-radius:16px;padding:12px 6px 12px;background:var(--black2);transition:border-color .2s,background .2s,transform .2s}
 .rd:hover{transform:translateY(-2px)}
 .rd .no{font-family:var(--en);font-weight:700;font-size:min(9vw,44px);line-height:1;color:var(--honey)}
-.rd .nm{display:block;font-weight:700;font-size:min(4vw,18px);line-height:1.35;margin-top:6px;word-break:auto-phrase}
+.rd .nm{display:block;font-weight:700;font-size:min(4.6vw,20px);line-height:1.35;margin-top:2px;color:var(--honey);word-break:auto-phrase}
 .rd .dt{display:block;letter-spacing:0;font-family:var(--en);font-weight:600;font-size:min(4.2vw,18px);line-height:1.35;margin-top:6px;color:#e9dcc4}
 .rd .dt small{font-family:var(--jp);font-size:.8em}
 .rd .st{display:inline-block;margin-top:8px;font-size:14px;font-weight:700;border-radius:999px;padding:1px 10px;background:#3a2f22;color:#d8cbb4}
@@ -514,7 +514,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       <p>※クーポンはすべて通常購入のみ対象です（定期購入には使えません）。</p>
       <p>※クーポンの併用・分割発送はできません。各クーポンはお一人様1回までです。</p>
       <p>※「先着150名」のクーポンは、なくなり次第終了します。</p>
-      <p>※11/24(火)20:00〜11/25(水)1:59は②と③の両方のクーポンが使えます。割引の大きいほうをお選びください。</p>
+      <p>※11/24(火)20:00〜11/25(水)1:59はブラックフライデークーポンと5のつく日クーポンの両方が使えます。割引の大きいほうをお選びください。</p>
       <p>※2個用・3個用クーポンには金額の条件がありますが、同じ商品を2個・3個お買い上げいただければ条件を満たします。</p>
       <p>※価格は2026年11月18日時点の税込価格です。クーポン適用後の価格は目安です。最新の価格・在庫は各商品ページでご確認ください。</p>
       <p>※はちみつは1歳未満の乳児には与えないでください。</p>
@@ -550,19 +550,19 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
   // 回ごとのクーポン [1個OFF, 2個OFF, 1個用key, 2個用key, 3個用key]
   var ROUNDS = [
-    {no:"①", tab:"ご愛顧<br>感謝デー", name:"ご愛顧感謝デー", sub:"72時間限定クーポン", start:T("2026-11-18T00:00"), end:T("2026-11-20T23:59")+59000,
+    {no:"", tab:"ご愛顧<br>感謝デー", name:"ご愛顧感謝デー", sub:"72時間限定クーポン", start:T("2026-11-18T00:00"), end:T("2026-11-20T23:59")+59000,
      dt:"11/18<small>(水)</small>0:00〜<br>11/20<small>(金)</small>23:59", tdt:"11/18<small>(水)</small><br>〜11/20<small>(金)</small>", first:true, p5:true,
      c:{pm08:[1400,3000,"OFdBQy1FUFdSLVo0QU8tMFdSSA--","MkdWNS01MUk1LU81S1EtNFZERA--","SjZDTS1VOEFULVNRRE8tVE5MUg--"],
         gb10:[2050,4450,"T0RWSi1IRFFMLU9IRDUtV0ozTQ--","VUwwRS1RUERPLUdJVVAtOERQMw--","WVFDMi1aQ09QLVVQU04tSVI3UQ--"],
         gb15:[2000,4600,"U1BaSC1RWVRILTJTSlotSFoxRw--","NEJYUC1XWU9ILU0xOFEtRVVSWg--","UkRYQy1LUU5LLTQ2ODUtM0tVSw--"],
         gb20:[3100,6400,"SDJEVy1FU0pLLVhSWlctMktFRw--","OVAySy1MVTZCLVg0SFotSFZUVw--","WEtNSC03NjNBLU1BSEwtWUpPTw--"]}},
-    {no:"②", tab:"ブラック<br>フライデー", name:"ブラックフライデークーポン", sub:"枚数制限なし", start:T("2026-11-21T00:00"), end:T("2026-11-25T01:59")+59000,
+    {no:"", tab:"ブラック<br>フライデー", name:"ブラックフライデークーポン", sub:"枚数制限なし", start:T("2026-11-21T00:00"), end:T("2026-11-25T01:59")+59000,
      dt:"11/21<small>(土)</small>0:00〜<br>11/25<small>(水)</small>1:59", tdt:"11/21<small>(土)</small><br>〜11/25<small>(水)</small>", first:false, p5:false,
      c:{pm08:[1300,2800,"WlFZUy00Qk9PLTlPN00tRVZVRQ--","S09SMC1aRzlXLVNKUkwtWTkxWA--","NzlLTy1QUlVCLTRaS1gtWUdUWg--"],
         gb10:[1950,4350,"VjJHUy1USFNHLVlNVFAtSEdGVQ--","S1BQWS1ZV09RLUlUUTYtNFBEQw--","OFZLTi1YTlhRLUVCWDktRzNJSw--"],
         gb15:[1900,4450,"MkhVWC1NWU9QLVhWOEUtMVA5Sw--","VEJPMC1LVDcwLTlZVVktNUlFSA--","TUk0Sy0yRjdELUtLSzEtNzNNVg--"],
         gb20:[3000,6200,"UE1GSC1aUjBLLUszNVMtTlNJNg--","U0hXRC0zM0dHLTE3WFUtV1JNUg--","TkpBRS1HS1lKLUVBTjQtWFhCTA--"]}},
-    {no:"③", tab:"5のつく日<br>28時間", name:"5のつく日", sub:"28時間限定クーポン", start:T("2026-11-24T20:00"), end:T("2026-11-25T23:59")+59000,
+    {no:"", tab:"5のつく日<br>28時間", name:"5のつく日", sub:"28時間限定クーポン", start:T("2026-11-24T20:00"), end:T("2026-11-25T23:59")+59000,
      dt:"11/24<small>(火)</small>20:00〜<br>11/25<small>(水)</small>23:59", tdt:"11/24<small>(火)</small><br>〜11/25<small>(水)</small>", first:true, p5:false,
      c:{pm08:[1350,2900,"QVZGWi0zS1VDLUlCVFUtUzdEQQ--","MlRHMS1ZUllVLUVCV0gtUDRMVw--","STFNUC1UN1c1LUlOVVItRFNXSA--"],
         gb10:[2000,4400,"QkhUTC1IWkVRLUw0TkUtS0xPMg--","VlNOWC1UQkxULVBGRUEtN05IMg--","TlcxWC1WWlFOLTVCUFotVFBLQw--"],
@@ -606,7 +606,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       var st = status(r, t);
       var lab = st === "live" ? "開催中" : (st === "soon" ? "これから" : "終了");
       return '<button type="button" class="rd ' + (i === sel ? "on " : "") + (st === "end" ? "end" : "") + '" data-i="' + i + '">' +
-        '<span class="no">' + r.no + '</span><span class="nm">' + r.tab + '</span><span class="dt">' + r.tdt + '</span>' +
+        '<span class="nm">' + r.tab + '</span><span class="dt">' + r.tdt + '</span>' +
         '<span class="st ' + st + '">' + lab + '</span></button>';
     }).join("");
     $$("[data-rounds] .rd").forEach(function(b){
@@ -623,7 +623,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       '<p class="when">' + r.dt.replace("<br>", " ") + '</p><div class="tags">' + tags + '</div>' + (r.p5 ? P5 : "") +
       '<p class="cdx" data-cdx></p>';
     if (sel === 0) html += '<p class="both">ブラックフライデーは11/19(木)20:00スタート。このクーポンはその前から使えます。</p>';
-    if (sel === 2) html += '<p class="both">11/24(火)20:00〜11/25(水)1:59は②と③の両方が使えます。割引の大きいほうをお選びください。</p>';
+    if (sel === 2) html += '<p class="both">11/24(火)20:00〜11/25(水)1:59はブラックフライデークーポンと5のつく日クーポンの両方が使えます。割引の大きいほうをお選びください。</p>';
     $("[data-rinfo]").innerHTML = html;
     $("[data-items-lead]").textContent = r.no + r.name + "（" + r.dt.replace(/<[^>]+>/g, "").replace("〜", " 〜 ") + "）の価格です。";
   }

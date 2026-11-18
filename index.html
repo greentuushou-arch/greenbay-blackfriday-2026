@@ -76,10 +76,11 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .fv-date .ar{width:30px;height:2px;background:#fff;position:relative}
 .fv-date .ar:after{content:"";position:absolute;right:-1px;top:-4px;border:5px solid transparent;border-left:8px solid #fff;border-right:0}
 .jars{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:22px 14px 0;position:relative}
-.jars a{position:relative;border-radius:14px;overflow:hidden;box-shadow:0 0 0 2px rgba(255,194,26,.6),0 0 26px rgba(255,170,0,.35);transition:transform .3s;animation:float 4.6s ease-in-out infinite}
+.jars a{position:relative;display:block;transition:transform .3s;animation:float 4.6s ease-in-out infinite}
+.jars img{border-radius:14px;box-shadow:0 0 0 2px rgba(255,194,26,.6),0 0 26px rgba(255,170,0,.35)}
 .jars a:nth-child(2){animation-delay:-1.1s}.jars a:nth-child(3){animation-delay:-2.2s}.jars a:nth-child(4){animation-delay:-3.3s}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-.jars span{position:absolute;left:0;right:0;bottom:0;background:rgba(11,9,7,.86);color:var(--honey);font-family:var(--en);font-weight:700;font-size:min(4.4vw,22px);padding:3px 0;letter-spacing:.02em}
+.jars span{display:block;margin-top:8px;color:var(--honey);font-family:var(--en);font-weight:700;font-size:min(4.4vw,22px);line-height:1;letter-spacing:.02em}
 .fv-now{margin:26px 16px 0;border:2px solid var(--honey);border-radius:18px;padding:14px 12px 16px;background:rgba(11,9,7,.7);box-shadow:0 0 22px rgba(255,194,26,.25)}
 .fv-now .lbl{display:inline-block;background:var(--honey);color:var(--ink);font-weight:700;font-size:min(4.6vw,22px);border-radius:999px;padding:2px 16px}
 .fv-now .rn{display:block;margin-top:8px;font-weight:700;font-size:min(5.4vw,28px);line-height:1.35}
@@ -340,7 +341,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .hd small{font-size:14px}
   .fv-tape{top:70px;font-size:16px}
   .jars{gap:6px;margin:20px 10px 0}
-  .jars a{border-radius:10px}
+  .jars img{border-radius:10px}
   .it-b{grid-template-columns:40% 1fr;gap:12px}
   .buys{gap:8px;padding:12px 10px}
   .buy{padding:10px 6px}

@@ -270,6 +270,17 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .stairs .g{white-space:nowrap;font-size:15px;font-weight:700;color:#fff;background:var(--red);border-radius:999px;padding:6px 14px}
 .eb .btn{margin-top:12px}
 
+
+/* ---- recipe ---- */
+.recipe{background:var(--black)}
+.rc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 10px;margin-top:18px}
+.rc-card{display:flex;flex-direction:column;text-align:center;transition:transform .25s}
+.rc-card:hover{transform:translateY(-3px)}
+.rc-card img{width:100%;aspect-ratio:16/9;border-radius:12px;object-fit:contain;background:#ffd400}
+.rc-card .ar{display:inline-block;align-self:center;margin-top:8px;font-size:14px;font-weight:700;color:var(--ink);background:var(--honey);border-radius:6px;padding:0 8px}
+.rc-card .nm{display:block;margin-top:4px;font-size:15px;font-weight:700;line-height:1.45;color:#fff;word-break:auto-phrase}
+.recipe .btn{margin-top:20px}
+
 /* ---- foot ---- */
 .notes{padding:30px 16px 20px;border-top:1px solid var(--line-d)}
 .notes h3{font-size:18px;font-weight:700;color:var(--honey);text-align:center}
@@ -359,6 +370,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
     <a href="#matome"><span>03</span>まとめ買いクーポン</a>
     <a href="#why"><span>04</span>グリーンベイのこだわり</a>
     <a href="#etc"><span>05</span>ほかのマヌカハニー</a>
+    <a href="#recipe"><span>06</span>マヌカハニーのレシピ</a>
   </nav>
 </aside>
 <aside class="rail r" aria-label="いま使えるクーポン">
@@ -505,6 +517,26 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
           <a href="https://coupon.rakuten.co.jp/getCoupon?getkey=SDNESy1WRVRLLUNXRzctU1FJWg--&rt="><span class="q"><b>3</b>個で</span><span class="off"><b>2,100</b><span class="off__u"><i class="y">円</i><i class="o">OFF</i></span></span><span class="g">獲得する</span></a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- 06 レシピ -->
+  <section class="sec recipe" id="recipe">
+    <div class="inner">
+      <span class="kick rv">06 RECIPE</span>
+      <h2 class="h2 rv">届いたら、<em>どう食べる？</em></h2>
+      <p class="lead rv">グリーンベイキッチンでは、日本全国のご当地食材とマヌカハニーを合わせたレシピを公開しています。</p>
+      <div class="rc-grid">
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/wakayama-kaki/"><img src="img/recipe/r01.jpg" alt="和歌山の柿をちょっとおめかし。マヌカハニーのカプレーゼ風" loading="lazy"><span class="ar">和歌山県編</span><span class="nm">和歌山の柿をちょっとおめかし。マヌカハニーのカプレーゼ風</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/gunma-yakimanju/"><img src="img/recipe/r02.jpg" alt="群馬名物・焼きまんじゅうの味噌だれをマヌカハニーで作ってみました" loading="lazy"><span class="ar">群馬県編</span><span class="nm">群馬名物・焼きまんじゅうの味噌だれをマヌカハニーで作ってみました</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/hokkaido-chanchan/"><img src="img/recipe/r03.jpg" alt="北海道名物・マヌカ味噌で鮭ちゃんちゃん焼き" loading="lazy"><span class="ar">北海道編</span><span class="nm">北海道名物・マヌカ味噌で鮭ちゃんちゃん焼き</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/yamaguchi-kawara/"><img src="img/recipe/r04.jpg" alt="山口県名物・マヌカハニーで甘辛牛肉の瓦そば" loading="lazy"><span class="ar">山口県編</span><span class="nm">山口県名物・マヌカハニーで甘辛牛肉の瓦そば</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/saitama-gyoda-furai/"><img src="img/recipe/r05.jpg" alt="埼玉名物・行田フライの甘辛ソースをマヌカハニーで作ってみました" loading="lazy"><span class="ar">埼玉県編</span><span class="nm">埼玉名物・行田フライの甘辛ソースをマヌカハニーで作ってみました</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/miyazaki-nanban/"><img src="img/recipe/r06.jpg" alt="宮崎名物・チキン南蛮をマヌカハニーでアレンジ" loading="lazy"><span class="ar">宮崎県編</span><span class="nm">宮崎名物・チキン南蛮をマヌカハニーでアレンジ</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/kagoshima-gane/"><img src="img/recipe/r07.jpg" alt="鹿児島県名物・マヌカハニー入りがね" loading="lazy"><span class="ar">鹿児島県編</span><span class="nm">鹿児島県名物・マヌカハニー入りがね</span></a>
+        <a class="rc-card" href="https://www.rakuten.co.jp/manuka/contents/manuka-recipe/japan/tochigi-nikkori/"><img src="img/recipe/r08.jpg" alt="にっこり梨とマヌカハニーの、にっこりオープンサンド" loading="lazy"><span class="ar">栃木県編</span><span class="nm">にっこり梨とマヌカハニーの、にっこりオープンサンド</span></a>
+      </div>
+      <a class="btn hn rv" href="https://www.rakuten.co.jp/manuka/contents/topicslist/">レシピ・読みものをもっと見る</a>
     </div>
   </section>
 
